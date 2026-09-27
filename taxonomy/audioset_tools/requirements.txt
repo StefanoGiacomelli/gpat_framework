@@ -1,0 +1,18 @@
+# Core
+numpy
+tqdm
+
+# Downloader
+yt-dlp
+soundfile
+resampy
+
+# Plotting/event-track
+matplotlib
+torch
+
+# SALT support
+py_salt
+
+# External command-line prerequisite for downloads:
+# ffmpeg must be installed on the host and visible on PATH.

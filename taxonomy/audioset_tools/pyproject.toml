@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audioset-tools"
+version = "0.1.0"
+description = "Utilities for AudioSet Standard, AudioSet Strong, and VGGSound metadata curation and downloads."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "tqdm",
+    "yt-dlp",
+    "soundfile",
+    "resampy",
+]
+
+[project.optional-dependencies]
+events = ["matplotlib", "torch", "py_salt"]
+
+[tool.setuptools]
+packages = ["audioset_tools"]
+
+[tool.setuptools.package-dir]
+audioset_tools = "."

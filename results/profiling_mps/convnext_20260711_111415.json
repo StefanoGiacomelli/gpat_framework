@@ -1,0 +1,519 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "convnext",
+    "model_class": "models.convnext.model.ConvNeXt",
+    "checkpoint_path": "models/convnext/convnext_tiny_471mAP.pth",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:13:56.041509+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.4695031670271419,
+      0.46753850003005937,
+      0.47261758300010115,
+      0.47988783300388604,
+      0.47476583399111405,
+      0.4764378339750692,
+      0.468621542036999,
+      0.47016666701529175,
+      0.47179404099006206,
+      0.4713627920136787,
+      0.4711888339952566,
+      0.4719225830049254,
+      0.4712065830244683,
+      0.47746329195797443,
+      0.4712276660138741,
+      0.47054733301047236,
+      0.47018516599200666,
+      0.4756537909852341,
+      0.4678305000416003,
+      0.4705947919865139
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.46753850003005937,
+      "max": 0.47988783300388604,
+      "mean": 0.4720258166547865,
+      "std": 0.003253692956413058,
+      "median": 0.4712171245191712,
+      "skewness": 0.9518680468916305,
+      "kurtosis": 0.4747820786891399,
+      "iqr": 0.002974104500026442,
+      "p75": 0.4731546457478544,
+      "p90": 0.4765403797733597
+    }
+  },
+  "parameters": {
+    "total_parameters": 29388303,
+    "trainable_parameters": 28222767,
+    "non_trainable_parameters": 1165536,
+    "total_parameters_millions": 29.388303,
+    "trainable_parameters_millions": 28.222767,
+    "parameter_memory_mb": 117.553212,
+    "bytes_by_dtype": {
+      "torch.float32": 117553212
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 2599.337984
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2756.608
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2758.311936
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2758.311936
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.123072
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.123072
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2773.106688
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2756.411392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2756.608
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2758.311936
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2758.311936
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2762.26048
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.123072
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.123072
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.106688
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2773.106688
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.19660800000019663,
+          1.703935999999885,
+          0.0,
+          3.948543999999856,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          10.86259199999995,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.8355839999999943,
+        "std": 2.5398398711961687
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 21164794784,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 6,
+          "aten::add": 28,
+          "aten::log10": 1,
+          "aten::mul": 23,
+          "aten::sub_": 1,
+          "aten::mean": 10,
+          "aten::sub": 8,
+          "aten::sqrt": 4,
+          "aten::div": 4,
+          "aten::gelu": 18,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "stages.0.0.drop_path",
+          "stages.0.1.drop_path",
+          "stages.0.2.drop_path",
+          "stages.1.0.drop_path",
+          "stages.1.1.drop_path",
+          "stages.1.2.drop_path",
+          "stages.2.0.drop_path",
+          "stages.2.1.drop_path",
+          "stages.2.2.drop_path",
+          "stages.2.3.drop_path",
+          "stages.2.4.drop_path",
+          "stages.2.5.drop_path",
+          "stages.2.6.drop_path",
+          "stages.2.7.drop_path",
+          "stages.2.8.drop_path",
+          "stages.3.0.drop_path",
+          "stages.3.1.drop_path",
+          "stages.3.2.drop_path"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 29388303,
+        "trainable_params": 28222767,
+        "total_mult_adds": 2360657391,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nConvNeXt                                 [1, 527]                  --\n\u251c\u2500Spectrogram: 1-1                       [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-1                         --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                  [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                  [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-2                  [1, 1, 1001, 224]         (114,912)\n\u251c\u2500BatchNorm2d: 1-3                       [1, 224, 1001, 1]         448\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-2                   [1, 96, 252, 56]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-3                  [1, 96, 252, 56]          1,632\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-4               [1, 96, 252, 56]          192\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-3                   [1, 96, 252, 56]          --\n\u2502    \u2502    \u2514\u2500Block: 3-5                   [1, 96, 252, 56]          79,296\n\u2502    \u2502    \u2514\u2500Block: 3-6                   [1, 96, 252, 56]          79,296\n\u2502    \u2502    \u2514\u2500Block: 3-7                   [1, 96, 252, 56]          79,296\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-4                   [1, 192, 126, 28]         --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-8               [1, 96, 252, 56]          192\n\u2502    \u2502    \u2514\u2500Conv2d: 3-9                  [1, 192, 126, 28]         73,920\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-5                   [1, 192, 126, 28]         --\n\u2502    \u2502    \u2514\u2500Block: 3-10                  [1, 192, 126, 28]         306,048\n\u2502    \u2502    \u2514\u2500Block: 3-11                  [1, 192, 126, 28]         306,048\n\u2502    \u2502    \u2514\u2500Block: 3-12                  [1, 192, 126, 28]         306,048\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-6                   [1, 384, 63, 14]          --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-13              [1, 192, 126, 28]         384\n\u2502    \u2502    \u2514\u2500Conv2d: 3-14                 [1, 384, 63, 14]          295,296\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-7                   [1, 384, 63, 14]          --\n\u2502    \u2502    \u2514\u2500Block: 3-15                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-16                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-17                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-18                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-19                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-20                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-21                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-22                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-23                  [1, 384, 63, 14]          1,201,920\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-8                   [1, 768, 31, 7]           --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-24              [1, 384, 63, 14]          768\n\u2502    \u2502    \u2514\u2500Conv2d: 3-25                 [1, 768, 31, 7]           1,180,416\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-9                   [1, 768, 31, 7]           --\n\u2502    \u2502    \u2514\u2500Block: 3-26                  [1, 768, 31, 7]           4,763,136\n\u2502    \u2502    \u2514\u2500Block: 3-27                  [1, 768, 31, 7]           4,763,136\n\u2502    \u2502    \u2514\u2500Block: 3-28                  [1, 768, 31, 7]           4,763,136\n\u251c\u2500LayerNorm: 1-12                        [1, 768]                  1,536\n\u251c\u2500Linear: 1-13                           [1, 527]                  405,263\n==========================================================================================\nTotal params: 29,388,303\nTrainable params: 28,222,767\nNon-trainable params: 1,165,536\nTotal mult-adds (G): 2.36\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 602.01\nParams size (MB): 117.53\nEstimated Total Size (MB): 720.82\n=========================================================================================="
+      },
+      "flops": 21164794784,
+      "macs_estimated": 10582397392.0,
+      "gflops": 21.164794784,
+      "gmacs_estimated": 10.582397392
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 21164794784,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 6,
+          "aten::add": 28,
+          "aten::log10": 1,
+          "aten::mul": 23,
+          "aten::sub_": 1,
+          "aten::mean": 10,
+          "aten::sub": 8,
+          "aten::sqrt": 4,
+          "aten::div": 4,
+          "aten::gelu": 18,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "stages.0.0.drop_path",
+          "stages.0.1.drop_path",
+          "stages.0.2.drop_path",
+          "stages.1.0.drop_path",
+          "stages.1.1.drop_path",
+          "stages.1.2.drop_path",
+          "stages.2.0.drop_path",
+          "stages.2.1.drop_path",
+          "stages.2.2.drop_path",
+          "stages.2.3.drop_path",
+          "stages.2.4.drop_path",
+          "stages.2.5.drop_path",
+          "stages.2.6.drop_path",
+          "stages.2.7.drop_path",
+          "stages.2.8.drop_path",
+          "stages.3.0.drop_path",
+          "stages.3.1.drop_path",
+          "stages.3.2.drop_path"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 29388303,
+        "trainable_params": 28222767,
+        "total_mult_adds": 2360657391,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nConvNeXt                                 [1, 527]                  --\n\u251c\u2500Spectrogram: 1-1                       [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-1                         --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                  [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                  [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-2                  [1, 1, 1001, 224]         (114,912)\n\u251c\u2500BatchNorm2d: 1-3                       [1, 224, 1001, 1]         448\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-2                   [1, 96, 252, 56]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-3                  [1, 96, 252, 56]          1,632\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-4               [1, 96, 252, 56]          192\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-3                   [1, 96, 252, 56]          --\n\u2502    \u2502    \u2514\u2500Block: 3-5                   [1, 96, 252, 56]          79,296\n\u2502    \u2502    \u2514\u2500Block: 3-6                   [1, 96, 252, 56]          79,296\n\u2502    \u2502    \u2514\u2500Block: 3-7                   [1, 96, 252, 56]          79,296\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-4                   [1, 192, 126, 28]         --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-8               [1, 96, 252, 56]          192\n\u2502    \u2502    \u2514\u2500Conv2d: 3-9                  [1, 192, 126, 28]         73,920\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-5                   [1, 192, 126, 28]         --\n\u2502    \u2502    \u2514\u2500Block: 3-10                  [1, 192, 126, 28]         306,048\n\u2502    \u2502    \u2514\u2500Block: 3-11                  [1, 192, 126, 28]         306,048\n\u2502    \u2502    \u2514\u2500Block: 3-12                  [1, 192, 126, 28]         306,048\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-6                   [1, 384, 63, 14]          --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-13              [1, 192, 126, 28]         384\n\u2502    \u2502    \u2514\u2500Conv2d: 3-14                 [1, 384, 63, 14]          295,296\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-7                   [1, 384, 63, 14]          --\n\u2502    \u2502    \u2514\u2500Block: 3-15                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-16                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-17                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-18                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-19                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-20                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-21                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-22                  [1, 384, 63, 14]          1,201,920\n\u2502    \u2502    \u2514\u2500Block: 3-23                  [1, 384, 63, 14]          1,201,920\n\u251c\u2500ModuleList: 1-10                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-8                   [1, 768, 31, 7]           --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-24              [1, 384, 63, 14]          768\n\u2502    \u2502    \u2514\u2500Conv2d: 3-25                 [1, 768, 31, 7]           1,180,416\n\u251c\u2500ModuleList: 1-11                       --                        (recursive)\n\u2502    \u2514\u2500Sequential: 2-9                   [1, 768, 31, 7]           --\n\u2502    \u2502    \u2514\u2500Block: 3-26                  [1, 768, 31, 7]           4,763,136\n\u2502    \u2502    \u2514\u2500Block: 3-27                  [1, 768, 31, 7]           4,763,136\n\u2502    \u2502    \u2514\u2500Block: 3-28                  [1, 768, 31, 7]           4,763,136\n\u251c\u2500LayerNorm: 1-12                        [1, 768]                  1,536\n\u251c\u2500Linear: 1-13                           [1, 527]                  405,263\n==========================================================================================\nTotal params: 29,388,303\nTrainable params: 28,222,767\nNon-trainable params: 1,165,536\nTotal mult-adds (G): 2.36\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 602.01\nParams size (MB): 117.53\nEstimated Total Size (MB): 720.82\n=========================================================================================="
+      },
+      "flops": 21164794784,
+      "macs_estimated": 10582397392.0,
+      "gflops": 21.164794784,
+      "gmacs_estimated": 10.582397392
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 7360,
+    "seconds": 0.23,
+    "sample_rate": 32000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 7531,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 6281,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 6906,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7219,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7375,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 7297,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7336,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7356,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7366,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 7361,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 7359,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (1 x 14). Kernel size: (2 x 2). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 7360,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

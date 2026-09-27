@@ -1,0 +1,587 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "ced",
+    "model_class": "models.ced.model.CEDBase",
+    "checkpoint_path": "models/ced/audiotransformer_base_mAP_4999.pt",
+    "model_configuration": {},
+    "module_sample_rate": 16000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:13:12.073028+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 16000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 160000,
+    "waveform_shape": [
+      1,
+      160000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 160000,
+      "waveform_shape": [
+        1,
+        160000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.08723633299814537,
+      0.08510537503752857,
+      0.0843883749912493,
+      0.08620391698786989,
+      0.08822320797480643,
+      0.08660245896317065,
+      0.08163862500805408,
+      0.0892486660159193,
+      0.08644429099513218,
+      0.08626825001556426,
+      0.08469270897330716,
+      0.08618966600624844,
+      0.08791716699488461,
+      0.08138716698158532,
+      0.08659266703762114,
+      0.08614541700808331,
+      0.08396591700147837,
+      0.08529287501005456,
+      0.08502662501996383,
+      0.0843448750092648
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.08138716698158532,
+      "max": 0.0892486660159193,
+      "mean": 0.08564572920149657,
+      "std": 0.001960176929103325,
+      "median": 0.08616754150716588,
+      "skewness": -0.5375720798554455,
+      "kurtosis": 0.6162088799264995,
+      "iqr": 0.001978489541215822,
+      "p75": 0.08659511501900852,
+      "p90": 0.0879477710928768
+    }
+  },
+  "parameters": {
+    "total_parameters": 85711759,
+    "trainable_parameters": 85711759,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 85.711759,
+    "trainable_parameters_millions": 85.711759,
+    "parameter_memory_mb": 342.847036,
+    "bytes_by_dtype": {
+      "torch.float32": 342847036
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 2677.440512
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2715.40224
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2715.40224
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 22287004352,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::stft": 1,
+          "aten::abs": 1,
+          "aten::pow": 1,
+          "aten::log10": 1,
+          "aten::mul": 19,
+          "aten::sub_": 1,
+          "aten::amax": 1,
+          "aten::sub": 1,
+          "aten::add": 26,
+          "aten::mul_": 1,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::mean": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "blocks.0.drop_path1",
+          "blocks.0.drop_path2",
+          "blocks.0.ls1",
+          "blocks.0.ls2",
+          "blocks.1.drop_path1",
+          "blocks.1.drop_path2",
+          "blocks.1.ls1",
+          "blocks.1.ls2",
+          "blocks.10.drop_path1",
+          "blocks.10.drop_path2",
+          "blocks.10.ls1",
+          "blocks.10.ls2",
+          "blocks.11.drop_path1",
+          "blocks.11.drop_path2",
+          "blocks.11.ls1",
+          "blocks.11.ls2",
+          "blocks.2.drop_path1",
+          "blocks.2.drop_path2",
+          "blocks.2.ls1",
+          "blocks.2.ls2",
+          "blocks.3.drop_path1",
+          "blocks.3.drop_path2",
+          "blocks.3.ls1",
+          "blocks.3.ls2",
+          "blocks.4.drop_path1",
+          "blocks.4.drop_path2",
+          "blocks.4.ls1",
+          "blocks.4.ls2",
+          "blocks.5.drop_path1",
+          "blocks.5.drop_path2",
+          "blocks.5.ls1",
+          "blocks.5.ls2",
+          "blocks.6.drop_path1",
+          "blocks.6.drop_path2",
+          "blocks.6.ls1",
+          "blocks.6.ls2",
+          "blocks.7.drop_path1",
+          "blocks.7.drop_path2",
+          "blocks.7.ls1",
+          "blocks.7.ls2",
+          "blocks.8.drop_path1",
+          "blocks.8.drop_path2",
+          "blocks.8.ls1",
+          "blocks.8.ls2",
+          "blocks.9.drop_path1",
+          "blocks.9.drop_path2",
+          "blocks.9.ls1",
+          "blocks.9.ls2",
+          "patch_embed.norm"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 85711759,
+        "trainable_params": 85711759,
+        "total_mult_adds": 134412175,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nCEDBase                                  [1, 527]                  51,456\n\u251c\u2500FrontEnd: 1-1                          [1, 64, 1001]             --\n\u2502    \u2514\u2500MelSpectrogram: 2-1               [1, 64, 1001]             --\n\u2502    \u2502    \u2514\u2500Spectrogram: 3-1             [1, 257, 1001]            --\n\u2502    \u2502    \u2514\u2500MelScale: 3-2                [1, 64, 1001]             --\n\u2502    \u2514\u2500AmplitudeToDB: 2-2                [1, 64, 1001]             --\n\u251c\u2500Sequential: 1-2                        [1, 1, 64, 1001]          --\n\u2502    \u2514\u2500Rearrange: 2-3                    [1, 64, 1, 1001]          --\n\u2502    \u2514\u2500BatchNorm2d: 2-4                  [1, 64, 1, 1001]          128\n\u2502    \u2514\u2500Rearrange: 2-5                    [1, 1, 64, 1001]          --\n\u251c\u2500AudioPatchEmbed: 1-3                   [1, 768, 4, 62]           --\n\u2502    \u2514\u2500Conv2d: 2-6                       [1, 768, 4, 62]           197,376\n\u2502    \u2514\u2500Identity: 2-7                     [1, 768, 4, 62]           --\n\u251c\u2500Dropout: 1-4                           [1, 248, 768]             --\n\u251c\u2500Sequential: 1-5                        [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-8                        [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-3               [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-4               [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-5                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-6                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-7               [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-8                     [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-9                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-10               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-9                        [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-11              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-12              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-13               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-14               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-15              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-16                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-17               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-18               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-10                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-19              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-20              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-21               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-22               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-23              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-24                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-25               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-26               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-11                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-27              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-28              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-29               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-30               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-31              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-32                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-33               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-34               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-12                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-35              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-36              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-37               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-38               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-39              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-40                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-41               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-42               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-13                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-43              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-44              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-45               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-46               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-47              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-48                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-49               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-50               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-14                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-51              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-52              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-53               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-54               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-55              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-56                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-57               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-58               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-15                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-59              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-60              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-61               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-62               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-63              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-64                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-65               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-66               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-16                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-67              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-68              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-69               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-70               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-71              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-72                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-73               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-74               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-17                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-75              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-76              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-77               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-78               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-79              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-80                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-81               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-82               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-18                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-83              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-84              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-85               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-86               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-87              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-88                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-89               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-90               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-19                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-91              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-92              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-93               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-94               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-95              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-96                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-97               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-98               [1, 248, 768]             --\n\u251c\u2500LayerNorm: 1-6                         [1, 248, 768]             1,536\n\u251c\u2500Sequential: 1-7                        [1, 527]                  --\n\u2502    \u2514\u2500LayerNorm: 2-20                   [1, 768]                  1,536\n\u2502    \u2514\u2500Linear: 2-21                      [1, 527]                  405,263\n==========================================================================================\nTotal params: 85,711,759\nTrainable params: 85,711,759\nNon-trainable params: 0\nTotal mult-adds (M): 134.41\n==========================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 204.70\nParams size (MB): 342.64\nEstimated Total Size (MB): 547.98\n=========================================================================================="
+      },
+      "flops": 22287004352,
+      "macs_estimated": 11143502176.0,
+      "gflops": 22.287004352,
+      "gmacs_estimated": 11.143502176
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 22287004352,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::stft": 1,
+          "aten::abs": 1,
+          "aten::pow": 1,
+          "aten::log10": 1,
+          "aten::mul": 19,
+          "aten::sub_": 1,
+          "aten::amax": 1,
+          "aten::sub": 1,
+          "aten::add": 26,
+          "aten::mul_": 1,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::mean": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "blocks.0.drop_path1",
+          "blocks.0.drop_path2",
+          "blocks.0.ls1",
+          "blocks.0.ls2",
+          "blocks.1.drop_path1",
+          "blocks.1.drop_path2",
+          "blocks.1.ls1",
+          "blocks.1.ls2",
+          "blocks.10.drop_path1",
+          "blocks.10.drop_path2",
+          "blocks.10.ls1",
+          "blocks.10.ls2",
+          "blocks.11.drop_path1",
+          "blocks.11.drop_path2",
+          "blocks.11.ls1",
+          "blocks.11.ls2",
+          "blocks.2.drop_path1",
+          "blocks.2.drop_path2",
+          "blocks.2.ls1",
+          "blocks.2.ls2",
+          "blocks.3.drop_path1",
+          "blocks.3.drop_path2",
+          "blocks.3.ls1",
+          "blocks.3.ls2",
+          "blocks.4.drop_path1",
+          "blocks.4.drop_path2",
+          "blocks.4.ls1",
+          "blocks.4.ls2",
+          "blocks.5.drop_path1",
+          "blocks.5.drop_path2",
+          "blocks.5.ls1",
+          "blocks.5.ls2",
+          "blocks.6.drop_path1",
+          "blocks.6.drop_path2",
+          "blocks.6.ls1",
+          "blocks.6.ls2",
+          "blocks.7.drop_path1",
+          "blocks.7.drop_path2",
+          "blocks.7.ls1",
+          "blocks.7.ls2",
+          "blocks.8.drop_path1",
+          "blocks.8.drop_path2",
+          "blocks.8.ls1",
+          "blocks.8.ls2",
+          "blocks.9.drop_path1",
+          "blocks.9.drop_path2",
+          "blocks.9.ls1",
+          "blocks.9.ls2",
+          "patch_embed.norm"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 85711759,
+        "trainable_params": 85711759,
+        "total_mult_adds": 134412175,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nCEDBase                                  [1, 527]                  51,456\n\u251c\u2500FrontEnd: 1-1                          [1, 64, 1001]             --\n\u2502    \u2514\u2500MelSpectrogram: 2-1               [1, 64, 1001]             --\n\u2502    \u2502    \u2514\u2500Spectrogram: 3-1             [1, 257, 1001]            --\n\u2502    \u2502    \u2514\u2500MelScale: 3-2                [1, 64, 1001]             --\n\u2502    \u2514\u2500AmplitudeToDB: 2-2                [1, 64, 1001]             --\n\u251c\u2500Sequential: 1-2                        [1, 1, 64, 1001]          --\n\u2502    \u2514\u2500Rearrange: 2-3                    [1, 64, 1, 1001]          --\n\u2502    \u2514\u2500BatchNorm2d: 2-4                  [1, 64, 1, 1001]          128\n\u2502    \u2514\u2500Rearrange: 2-5                    [1, 1, 64, 1001]          --\n\u251c\u2500AudioPatchEmbed: 1-3                   [1, 768, 4, 62]           --\n\u2502    \u2514\u2500Conv2d: 2-6                       [1, 768, 4, 62]           197,376\n\u2502    \u2514\u2500Identity: 2-7                     [1, 768, 4, 62]           --\n\u251c\u2500Dropout: 1-4                           [1, 248, 768]             --\n\u251c\u2500Sequential: 1-5                        [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-8                        [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-3               [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-4               [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-5                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-6                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-7               [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-8                     [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-9                [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-10               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-9                        [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-11              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-12              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-13               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-14               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-15              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-16                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-17               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-18               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-10                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-19              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-20              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-21               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-22               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-23              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-24                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-25               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-26               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-11                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-27              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-28              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-29               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-30               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-31              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-32                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-33               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-34               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-12                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-35              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-36              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-37               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-38               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-39              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-40                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-41               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-42               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-13                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-43              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-44              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-45               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-46               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-47              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-48                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-49               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-50               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-14                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-51              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-52              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-53               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-54               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-55              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-56                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-57               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-58               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-15                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-59              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-60              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-61               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-62               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-63              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-64                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-65               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-66               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-16                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-67              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-68              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-69               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-70               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-71              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-72                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-73               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-74               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-17                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-75              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-76              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-77               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-78               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-79              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-80                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-81               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-82               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-18                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-83              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-84              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-85               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-86               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-87              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-88                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-89               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-90               [1, 248, 768]             --\n\u2502    \u2514\u2500Block: 2-19                       [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-91              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Attention: 3-92              [1, 248, 768]             2,362,368\n\u2502    \u2502    \u2514\u2500Identity: 3-93               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-94               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-95              [1, 248, 768]             1,536\n\u2502    \u2502    \u2514\u2500Mlp: 3-96                    [1, 248, 768]             4,722,432\n\u2502    \u2502    \u2514\u2500Identity: 3-97               [1, 248, 768]             --\n\u2502    \u2502    \u2514\u2500Identity: 3-98               [1, 248, 768]             --\n\u251c\u2500LayerNorm: 1-6                         [1, 248, 768]             1,536\n\u251c\u2500Sequential: 1-7                        [1, 527]                  --\n\u2502    \u2514\u2500LayerNorm: 2-20                   [1, 768]                  1,536\n\u2502    \u2514\u2500Linear: 2-21                      [1, 527]                  405,263\n==========================================================================================\nTotal params: 85,711,759\nTrainable params: 85,711,759\nNon-trainable params: 0\nTotal mult-adds (M): 134.41\n==========================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 204.70\nParams size (MB): 342.64\nEstimated Total Size (MB): 547.98\n=========================================================================================="
+      },
+      "flops": 22287004352,
+      "macs_estimated": 11143502176.0,
+      "gflops": 22.287004352,
+      "gmacs_estimated": 11.143502176
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 2400,
+    "seconds": 0.15,
+    "sample_rate": 16000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 1265,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 8). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 1890,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 12). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2203,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 14). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2359,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 15). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2437,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2398,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 15). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2418,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2408,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2403,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2401,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2400,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2399,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (64 x 15). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

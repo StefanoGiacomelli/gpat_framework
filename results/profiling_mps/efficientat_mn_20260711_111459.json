@@ -1,0 +1,495 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "efficientat_mn",
+    "model_class": "models.efficientat.model_mn.EfficientAT_MN",
+    "checkpoint_path": "models/efficientat/mn40_as_ext_mAP_487.pt",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:14:31.249603+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.6748790829442441,
+      0.6681760840001516,
+      0.6685299589880742,
+      0.6639673750032671,
+      0.6684172919485718,
+      0.6684359579812735,
+      0.6716330829658546,
+      0.6684015829814598,
+      0.6725795419770293,
+      0.6691397500107996,
+      0.6708952499902807,
+      0.6692620000103489,
+      0.6727140830480494,
+      0.6723471250152215,
+      0.6718077499535866,
+      0.6697935000411235,
+      0.6720425839885138,
+      0.6747558329952881,
+      0.6700710829463787,
+      0.6664592500310391
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.6639673750032671,
+      "max": 0.6748790829442441,
+      "mean": 0.6702154083410278,
+      "std": 0.002706608550441735,
+      "median": 0.6699322914937511,
+      "skewness": -0.24462009371262852,
+      "kurtosis": 0.21990375023112296,
+      "iqr": 0.003687427772092633,
+      "p75": 0.6721187192451907,
+      "p90": 0.6729182580427733
+    }
+  },
+  "parameters": {
+    "total_parameters": 68427303,
+    "trainable_parameters": 68427303,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 68.427303,
+    "trainable_parameters_millions": 68.427303,
+    "parameter_memory_mb": 273.709212,
+    "bytes_by_dtype": {
+      "torch.float32": 273709212
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 3134.308352
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 3330.834432
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.85024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3331.85024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3338.108928
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.719168
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.784704
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.85024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3331.85024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3332.603904
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3338.108928
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.8847359999999753,
+          0.0,
+          0.0,
+          0.06553600000006554,
+          0.0,
+          0.0,
+          0.06553600000006554,
+          0.0,
+          0.7536639999998442,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.5050240000000485,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.36372479999999996,
+        "std": 1.2358404723115075
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 8184498942,
+        "unsupported_ops": {
+          "aten::pad": 2,
+          "aten::stft": 1,
+          "aten::view_as_real": 1,
+          "aten::pow": 1,
+          "aten::sum": 1,
+          "aten::mul": 13,
+          "aten::add": 8,
+          "aten::div": 4,
+          "aten::log": 2,
+          "aten::sub": 4,
+          "aten::min": 1,
+          "aten::hardswish_": 21,
+          "aten::add_": 10,
+          "aten::mean": 8,
+          "aten::sigmoid": 9,
+          "aten::dropout_": 1
+        },
+        "uncalled_modules": [
+          "mel.freqm",
+          "mel.timem"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 68427303,
+        "trainable_params": 68427303,
+        "total_mult_adds": 8027735431,
+        "summary": "==============================================================================================================\nLayer (type:depth-idx)                                       Output Shape              Param #\n==============================================================================================================\nEfficientAT_MN                                               [1, 527]                  --\n\u251c\u2500AugmentMelSTFT: 1-1                                        [1, 128, 1000]            --\n\u251c\u2500MN: 1-2                                                    [1, 527]                  --\n\u2502    \u2514\u2500Sequential: 2-1                                       --                        --\n\u2502    \u2502    \u2514\u2500Conv2dNormActivation: 3-1                        [1, 64, 64, 500]          704\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-2                            [1, 64, 64, 500]          4,928\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-3                            [1, 96, 32, 250]          44,480\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-4                            [1, 96, 32, 250]          59,232\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-5                            [1, 160, 16, 125]         124,232\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-6                            [1, 160, 16, 125]         283,640\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-7                            [1, 160, 16, 125]         283,640\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-8                            [1, 320, 8, 63]           473,920\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-9                            [1, 320, 8, 63]           523,040\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-10                           [1, 320, 8, 63]           481,248\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-11                           [1, 320, 8, 63]           481,248\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-12                           [1, 448, 8, 63]           3,346,016\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-13                           [1, 448, 8, 63]           6,060,320\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-14                           [1, 640, 4, 32]           6,619,808\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-15                           [1, 640, 4, 32]           12,405,440\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-16                           [1, 640, 4, 32]           12,405,440\n\u2502    \u2502    \u2514\u2500Conv2dNormActivation: 3-17                       [1, 3840, 4, 32]          2,465,280\n\u2502    \u2514\u2500Sequential: 2-2                                       [1, 527]                  --\n\u2502    \u2502    \u2514\u2500AdaptiveAvgPool2d: 3-18                          [1, 3840, 1, 1]           --\n\u2502    \u2502    \u2514\u2500Flatten: 3-19                                    [1, 3840]                 --\n\u2502    \u2502    \u2514\u2500Linear: 3-20                                     [1, 5120]                 19,665,920\n\u2502    \u2502    \u2514\u2500Hardswish: 3-21                                  [1, 5120]                 --\n\u2502    \u2502    \u2514\u2500Dropout: 3-22                                    [1, 5120]                 --\n\u2502    \u2502    \u2514\u2500Linear: 3-23                                     [1, 527]                  2,698,767\n==============================================================================================================\nTotal params: 68,427,303\nTrainable params: 68,427,303\nNon-trainable params: 0\nTotal mult-adds (G): 8.03\n==============================================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 720.94\nParams size (MB): 273.71\nEstimated Total Size (MB): 995.93\n=============================================================================================================="
+      },
+      "flops": 8184498942,
+      "macs_estimated": 4092249471.0,
+      "gflops": 8.184498942,
+      "gmacs_estimated": 4.092249471
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 8184498942,
+        "unsupported_ops": {
+          "aten::pad": 2,
+          "aten::stft": 1,
+          "aten::view_as_real": 1,
+          "aten::pow": 1,
+          "aten::sum": 1,
+          "aten::mul": 13,
+          "aten::add": 8,
+          "aten::div": 4,
+          "aten::log": 2,
+          "aten::sub": 4,
+          "aten::min": 1,
+          "aten::hardswish_": 21,
+          "aten::add_": 10,
+          "aten::mean": 8,
+          "aten::sigmoid": 9,
+          "aten::dropout_": 1
+        },
+        "uncalled_modules": [
+          "mel.freqm",
+          "mel.timem"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 68427303,
+        "trainable_params": 68427303,
+        "total_mult_adds": 8027735431,
+        "summary": "==============================================================================================================\nLayer (type:depth-idx)                                       Output Shape              Param #\n==============================================================================================================\nEfficientAT_MN                                               [1, 527]                  --\n\u251c\u2500AugmentMelSTFT: 1-1                                        [1, 128, 1000]            --\n\u251c\u2500MN: 1-2                                                    [1, 527]                  --\n\u2502    \u2514\u2500Sequential: 2-1                                       --                        --\n\u2502    \u2502    \u2514\u2500Conv2dNormActivation: 3-1                        [1, 64, 64, 500]          704\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-2                            [1, 64, 64, 500]          4,928\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-3                            [1, 96, 32, 250]          44,480\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-4                            [1, 96, 32, 250]          59,232\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-5                            [1, 160, 16, 125]         124,232\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-6                            [1, 160, 16, 125]         283,640\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-7                            [1, 160, 16, 125]         283,640\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-8                            [1, 320, 8, 63]           473,920\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-9                            [1, 320, 8, 63]           523,040\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-10                           [1, 320, 8, 63]           481,248\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-11                           [1, 320, 8, 63]           481,248\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-12                           [1, 448, 8, 63]           3,346,016\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-13                           [1, 448, 8, 63]           6,060,320\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-14                           [1, 640, 4, 32]           6,619,808\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-15                           [1, 640, 4, 32]           12,405,440\n\u2502    \u2502    \u2514\u2500InvertedResidual: 3-16                           [1, 640, 4, 32]           12,405,440\n\u2502    \u2502    \u2514\u2500Conv2dNormActivation: 3-17                       [1, 3840, 4, 32]          2,465,280\n\u2502    \u2514\u2500Sequential: 2-2                                       [1, 527]                  --\n\u2502    \u2502    \u2514\u2500AdaptiveAvgPool2d: 3-18                          [1, 3840, 1, 1]           --\n\u2502    \u2502    \u2514\u2500Flatten: 3-19                                    [1, 3840]                 --\n\u2502    \u2502    \u2514\u2500Linear: 3-20                                     [1, 5120]                 19,665,920\n\u2502    \u2502    \u2514\u2500Hardswish: 3-21                                  [1, 5120]                 --\n\u2502    \u2502    \u2514\u2500Dropout: 3-22                                    [1, 5120]                 --\n\u2502    \u2502    \u2514\u2500Linear: 3-23                                     [1, 527]                  2,698,767\n==============================================================================================================\nTotal params: 68,427,303\nTrainable params: 68,427,303\nNon-trainable params: 0\nTotal mult-adds (G): 8.03\n==============================================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 720.94\nParams size (MB): 273.71\nEstimated Total Size (MB): 995.93\n=============================================================================================================="
+      },
+      "flops": 8184498942,
+      "macs_estimated": 4092249471.0,
+      "gflops": 8.184498942,
+      "gmacs_estimated": 4.092249471
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 514,
+    "seconds": 0.0160625,
+    "sample_rate": 32000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 2531,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 1281,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 656,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 344,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 343]"
+      },
+      {
+        "samples": 500,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 499]"
+      },
+      {
+        "samples": 578,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 539,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 520,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 510,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 509]"
+      },
+      {
+        "samples": 515,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 513,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 512]"
+      },
+      {
+        "samples": 514,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

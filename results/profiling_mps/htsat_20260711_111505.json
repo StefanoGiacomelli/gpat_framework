@@ -1,0 +1,507 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "htsat",
+    "model_class": "models.htsat.model.HTSAT",
+    "checkpoint_path": "models/htsat/HTSAT_AudioSet_Saved_3.ckpt",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:15:01.828047+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.06738858303287998,
+      0.06467008299659938,
+      0.0642285409849137,
+      0.06444116600323468,
+      0.06227933295303956,
+      0.06568429199978709,
+      0.06550700002117082,
+      0.06480587500846013,
+      0.06828800000948831,
+      0.06341483304277062,
+      0.06828495801892132,
+      0.0647486670059152,
+      0.06648400000995025,
+      0.06186233396874741,
+      0.060040832962840796,
+      0.06371604203013703,
+      0.06484395900042728,
+      0.06006495899055153,
+      0.062490290962159634,
+      0.06269016698934138
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.060040832962840796,
+      "max": 0.06828800000948831,
+      "mean": 0.0642966957995668,
+      "std": 0.002333663859224828,
+      "median": 0.06455562449991703,
+      "skewness": -0.06667912478498161,
+      "kurtosis": -0.26178564326185283,
+      "iqr": 0.0029111250332789496,
+      "p75": 0.06555132301582489,
+      "p90": 0.06747822053148411
+    }
+  },
+  "parameters": {
+    "total_parameters": 31325143,
+    "trainable_parameters": 30241687,
+    "non_trainable_parameters": 1083456,
+    "total_parameters_millions": 31.325143,
+    "trainable_parameters_millions": 30.241687,
+    "parameter_memory_mb": 125.300572,
+    "bytes_by_dtype": {
+      "torch.float32": 125300572
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 3462.365184
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3467.42784
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.411456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3467.42784
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.016384000000016385,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0008192000000008193,
+        "std": 0.0036635737743393195
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 7094384320,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 42,
+          "aten::log10": 1,
+          "aten::mul": 17,
+          "aten::sub_": 1,
+          "aten::upsample_bicubic2d": 1,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::adaptive_avg_pool1d": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "head",
+          "layers.0.blocks.0.drop_path",
+          "layers.0.blocks.1.drop_path",
+          "layers.1.blocks.0.drop_path",
+          "layers.1.blocks.1.drop_path",
+          "layers.2.blocks.0.drop_path",
+          "layers.2.blocks.1.drop_path",
+          "layers.2.blocks.2.drop_path",
+          "layers.2.blocks.3.drop_path",
+          "layers.2.blocks.4.drop_path",
+          "layers.2.blocks.5.drop_path",
+          "layers.3.blocks.0.drop_path",
+          "layers.3.blocks.1.drop_path"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 31325143,
+        "trainable_params": 30241687,
+        "total_mult_adds": 1183361376,
+        "summary": "====================================================================================================\nLayer (type:depth-idx)                             Output Shape              Param #\n====================================================================================================\nHTSAT                                              [1, 527]                  278,256\n\u251c\u2500Spectrogram: 1-1                                 [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-1                                   --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                            [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                            [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-2                            [1, 1, 1001, 64]          (32,832)\n\u251c\u2500BatchNorm2d: 1-3                                 [1, 64, 1001, 1]          128\n\u251c\u2500PatchEmbed: 1-4                                  [1, 4096, 96]             --\n\u2502    \u2514\u2500Conv2d: 2-2                                 [1, 96, 64, 64]           1,632\n\u2502    \u2514\u2500LayerNorm: 2-3                              [1, 4096, 96]             192\n\u251c\u2500Dropout: 1-5                                     [1, 4096, 96]             --\n\u251c\u2500ModuleList: 1-6                                  --                        --\n\u2502    \u2514\u2500BasicLayer: 2-4                             [1, 1024, 192]            --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                        --                        225,480\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-4                      [1, 1024, 192]            74,496\n\u2502    \u2514\u2500BasicLayer: 2-5                             [1, 256, 384]             --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-5                        --                        893,328\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-6                      [1, 256, 384]             296,448\n\u2502    \u2514\u2500BasicLayer: 2-6                             [1, 64, 768]              --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-7                        --                        10,668,384\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-8                      [1, 64, 768]              1,182,720\n\u2502    \u2514\u2500BasicLayer: 2-7                             [1, 64, 768]              --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-9                        --                        14,190,144\n\u251c\u2500LayerNorm: 1-7                                   [1, 64, 768]              1,536\n\u251c\u2500AdaptiveAvgPool1d: 1-8                           [1, 768, 1]               --\n\u251c\u2500Conv2d: 1-9                                      [1, 527, 1, 32]           2,428,943\n\u251c\u2500AdaptiveAvgPool1d: 1-10                          [1, 527, 1]               --\n====================================================================================================\nTotal params: 31,325,143\nTrainable params: 30,241,687\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 1.18\n====================================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 188.68\nParams size (MB): 124.02\nEstimated Total Size (MB): 313.98\n===================================================================================================="
+      },
+      "flops": 7094384320,
+      "macs_estimated": 3547192160.0,
+      "gflops": 7.09438432,
+      "gmacs_estimated": 3.54719216
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 7094384320,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 42,
+          "aten::log10": 1,
+          "aten::mul": 17,
+          "aten::sub_": 1,
+          "aten::upsample_bicubic2d": 1,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::adaptive_avg_pool1d": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "head",
+          "layers.0.blocks.0.drop_path",
+          "layers.0.blocks.1.drop_path",
+          "layers.1.blocks.0.drop_path",
+          "layers.1.blocks.1.drop_path",
+          "layers.2.blocks.0.drop_path",
+          "layers.2.blocks.1.drop_path",
+          "layers.2.blocks.2.drop_path",
+          "layers.2.blocks.3.drop_path",
+          "layers.2.blocks.4.drop_path",
+          "layers.2.blocks.5.drop_path",
+          "layers.3.blocks.0.drop_path",
+          "layers.3.blocks.1.drop_path"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 31325143,
+        "trainable_params": 30241687,
+        "total_mult_adds": 1183361376,
+        "summary": "====================================================================================================\nLayer (type:depth-idx)                             Output Shape              Param #\n====================================================================================================\nHTSAT                                              [1, 527]                  278,256\n\u251c\u2500Spectrogram: 1-1                                 [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-1                                   --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                            [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                            [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-2                            [1, 1, 1001, 64]          (32,832)\n\u251c\u2500BatchNorm2d: 1-3                                 [1, 64, 1001, 1]          128\n\u251c\u2500PatchEmbed: 1-4                                  [1, 4096, 96]             --\n\u2502    \u2514\u2500Conv2d: 2-2                                 [1, 96, 64, 64]           1,632\n\u2502    \u2514\u2500LayerNorm: 2-3                              [1, 4096, 96]             192\n\u251c\u2500Dropout: 1-5                                     [1, 4096, 96]             --\n\u251c\u2500ModuleList: 1-6                                  --                        --\n\u2502    \u2514\u2500BasicLayer: 2-4                             [1, 1024, 192]            --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                        --                        225,480\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-4                      [1, 1024, 192]            74,496\n\u2502    \u2514\u2500BasicLayer: 2-5                             [1, 256, 384]             --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-5                        --                        893,328\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-6                      [1, 256, 384]             296,448\n\u2502    \u2514\u2500BasicLayer: 2-6                             [1, 64, 768]              --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-7                        --                        10,668,384\n\u2502    \u2502    \u2514\u2500PatchMerging: 3-8                      [1, 64, 768]              1,182,720\n\u2502    \u2514\u2500BasicLayer: 2-7                             [1, 64, 768]              --\n\u2502    \u2502    \u2514\u2500ModuleList: 3-9                        --                        14,190,144\n\u251c\u2500LayerNorm: 1-7                                   [1, 64, 768]              1,536\n\u251c\u2500AdaptiveAvgPool1d: 1-8                           [1, 768, 1]               --\n\u251c\u2500Conv2d: 1-9                                      [1, 527, 1, 32]           2,428,943\n\u251c\u2500AdaptiveAvgPool1d: 1-10                          [1, 527, 1]               --\n====================================================================================================\nTotal params: 31,325,143\nTrainable params: 30,241,687\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 1.18\n====================================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 188.68\nParams size (MB): 124.02\nEstimated Total Size (MB): 313.98\n===================================================================================================="
+      },
+      "flops": 7094384320,
+      "macs_estimated": 3547192160.0,
+      "gflops": 7.09438432,
+      "gmacs_estimated": 3.54719216
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 513,
+    "seconds": 0.01603125,
+    "sample_rate": 32000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 2531,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 1281,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 656,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 344,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 344]"
+      },
+      {
+        "samples": 500,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 500]"
+      },
+      {
+        "samples": 578,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 539,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 520,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 510,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 510]"
+      },
+      {
+        "samples": 515,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 513,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 512,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (512, 512) at dimension 2 of input [1, 1, 512]"
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

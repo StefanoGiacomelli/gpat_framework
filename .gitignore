@@ -1,0 +1,98 @@
+# -----------------------------------------------------------------------------
+# macOS / editor metadata
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+
+# -----------------------------------------------------------------------------
+# Python environments, bytecode, caches, test/build artifacts
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# -----------------------------------------------------------------------------
+# Local logs, caches, and generated runtime outputs
+# -----------------------------------------------------------------------------
+*.log
+.cache/
+cache/
+logs/
+runs/
+tensorboard/
+evaluation_results/
+profile_results/
+realtime_results/
+profiling_candidates/
+
+# -----------------------------------------------------------------------------
+# Model checkpoints / exported model payloads
+#
+# Keep this scoped to model/artifact locations: training/HLP_lookup_table.pt is
+# a small repository asset used by the framework and MUST remain trackable.
+# -----------------------------------------------------------------------------
+models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.onnx
+checkpoints/
+weights/
+
+# -----------------------------------------------------------------------------
+# Large generated/serialized arrays
+# -----------------------------------------------------------------------------
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.parquet
+*.feather
+
+# -----------------------------------------------------------------------------
+# Raw audio datasets
+# -----------------------------------------------------------------------------
+datasets/AudioSet_data/
+datasets/FSD50K_data/
+
+# -----------------------------------------------------------------------------
+# Large upstream metadata not required by the current public evaluation/tests
+# -----------------------------------------------------------------------------
+datasets/AudioSet_meta/unbalanced_train_segments.csv
+datasets/AudioSet_Strong_meta/audioset_train_strong.tsv
+datasets/AudioSet-R_meta/AudioSet-R_train.json
+datasets/FSD50K_meta/FSD50K.ground_truth/dev.csv
+datasets/FSD50K_meta/FSD50K.metadata/
+
+# -----------------------------------------------------------------------------
+# Local demo audio
+#
+# The audited file name is YouTube-like and its redistribution license is not
+# established by the repository. Keep it local unless provenance permits
+# redistribution.
+# -----------------------------------------------------------------------------
+utils/R9_ZSCveAHg_7s.wav

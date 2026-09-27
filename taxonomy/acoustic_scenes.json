@@ -1,0 +1,134 @@
+{
+  "indoor": {
+    "description": "Enclosed environments ranging from private dwellings to large public venues, characterized by reverberant boundaries and human-made sound sources.",
+    "clap_prompt": "An audio recording captured inside enclosed indoor spaces, where reflections from walls and ceilings create a reverberant field shaped by human voices and mechanical sounds.",
+    "nodes": {
+      "domestic": {
+        "description": "Private living spaces (such as homes and apartments). Low to moderate background noise, short reverberation, and frequent small-object or appliance events.",
+        "clap_prompt": "A soundscape recorded inside a domestic home or apartment, where quiet background noise blends with appliances, footsteps, and speech reflections from nearby walls."
+      },
+      "office_classroom": {
+        "description": "Work and study environments with moderate absorption and steady HVAC. Typing, page turns, mouse clicks, light chatter, and occasional PA or bell cues.",
+        "clap_prompt": "An audio scene from an indoor office or classroom where typing, low conversation, and electronic devices generate steady background activity within a controlled acoustic space."
+      },
+      "public_small": {
+        "description": "Small-to-medium indoor public venues (such as shops, cafés, corridors). Mixed human chatter and object handling, short-to-medium reverberation, intermittent music.",
+        "clap_prompt": "An indoor recording from a small public space like a café or store, filled with human chatter, short reverberation, and occasional background music or movement."
+      },
+      "public_large": {
+        "description": "Large enclosed halls (such as museums, arenas, atria). Stronger reverberation and diffuse crowd murmur with sporadic announcements and broad-band transients.",
+        "clap_prompt": "An indoor audio scene recorded in a large hall or arena, where strong reverberation amplifies crowd murmur, footsteps, and distant announcements.",
+        "nodes": {
+          "entertainment": {
+            "description": "Indoor public venues designed for leisure or cultural activities, such as theaters, shopping malls, and museums. Characterized by diverse sound sources including music, voices, footsteps, and ambient crowd noise, often influenced by spacious acoustics or mild reverberation.",
+            "clap_prompt": "A lively indoor soundscape from a public entertainment venue, such as a theater, museum, or shopping mall, with overlapping sounds of music, speech, and crowd movement in a moderately reverberant space."
+          }
+        }
+      }
+    }
+  },
+
+  "outdoor": {
+    "description": "Open-air environments with minimal enclosure effects, dominated by natural ambience, human presence, or mechanical activity.",
+    "clap_prompt": "An audio recording made outdoors, in open spaces with distant reflections and wide frequency dynamics influenced by wind and surrounding activity.",
+    "nodes": {
+      "urban": {
+        "description": "Built outdoor areas dominated by man-made surfaces. Variable traffic, footsteps, crowd chatter, and reflective façades.",
+        "clap_prompt": "An urban outdoor soundscape characterized by traffic, crowd chatter, and environmental reflections between buildings and hard surfaces.",
+        "nodes": {
+          "street": {
+            "description": "Sidewalks and roadside areas with vehicular flow. Broadband traffic noise, stop-and-go dynamics, horns, footsteps.",
+            "clap_prompt": "A city street recording with cars, buses, and footsteps blending into broadband traffic noise and honking."
+          },
+          "park_plaza": {
+            "description": "Urban parks and plazas with intermittent vegetation and open space. Lighter traffic bleed, birds typical of cities, crowd clusters.",
+            "clap_prompt": "An urban park or plaza soundscape with birds, distant vehicles, and groups of people talking across open spaces."
+          }
+        }
+      },
+      "transport": {
+        "description": "Mobility contexts and infrastructures. Engine and rolling noises, announcements, door beeps, and motion-induced modulation.",
+        "clap_prompt": "A transport-related audio scene with mechanical noise, public announcements, and motion-induced low-frequency vibrations.",
+        "nodes": {
+          "in_vehicle": {
+            "description": "Interior of cars, buses, trucks. Engine/road noise, cabin resonances, indicator beeps, door and seat sounds.",
+            "clap_prompt": "A recording inside a moving vehicle, filled with engine noise, low-frequency rumble, and cabin resonances."
+          },
+          "metro_rail": {
+            "description": "Platforms or onboard trains/metros/trams. Wheel squeal, door chimes, PA announcements, periodic acceleration/braking.",
+            "clap_prompt": "An audio scene inside or around a train or metro with metallic wheel friction, door sounds, and public address announcements."
+          },
+          "airport": {
+            "description": "Airfields and terminals. Jet and APU noise, baggage handling, moving walkways, recurrent PA systems.",
+            "clap_prompt": "A recording from an airport terminal or runway area, dominated by jet engines, air handling noise, and public announcements."
+          }
+        }
+      },
+      "marine": {
+        "description": "Coastal and harbor environments with prominent water-related soundscapes.",
+        "clap_prompt": "An outdoor recording by the sea or harbor, featuring waves, boats, and seagulls within a spacious marine acoustic field.",
+        "nodes": {
+          "sea_beach": {
+            "description": "Open shoreline with surf, wind, and distant human activity. Broad low-frequency wave noise and seagulls are common.",
+            "clap_prompt": "A soundscape from a seaside beach with crashing waves, wind gusts, and occasional distant voices."
+          },
+          "harbor_dock": {
+            "description": "Ports, marinas, and docks. Boat engines, horns, rigging clatter, winches, and metallic impacts on hard surfaces.",
+            "clap_prompt": "An audio recording from a harbor with boat engines, horns, and metallic clattering from ships and docks."
+          }
+        }
+      },
+      "nature": {
+        "description": "Natural or sparsely built areas with limited human activities and strong biophony/geophony.",
+        "clap_prompt": "An outdoor natural environment dominated by wind, birds, and water sounds, with minimal human-made interference.",
+        "nodes": {
+          "lake_river": {
+            "description": "Freshwater banks with flowing or lapping water, insects, and occasional boats or anglers.",
+            "clap_prompt": "A soundscape from a lake or riverbank with gentle water movement, insects, and natural ambient sounds."
+          },
+          "forest": {
+            "description": "Wooded areas with rustling leaves, birdsong, and variable wind; generally low anthropogenic noise.",
+            "clap_prompt": "A forest recording with rustling leaves, bird calls, and natural reverberation filtered through dense vegetation."
+          },
+          "mountain": {
+            "description": "High-altitude or rocky terrains with thin human presence, wind prominence, and long sound propagation paths.",
+            "clap_prompt": "An open mountain environment where wind dominates the soundscape and distant echoes travel long distances."
+          }
+        }
+      }
+    }
+  },
+
+  "characterization": {
+    "description": "Acoustic overlays that modify or enrich base environments, such as weather conditions or human activity intensity.",
+    "clap_prompt": "Additional acoustic characteristics that alter an environment’s texture, including weather, human activity, or mechanical elements.",
+    "nodes": {
+      "weather": {
+        "description": "Overlay describing meteorological conditions (rain, wind, thunder) that modify spectrum, dynamics, and audibility.",
+        "clap_prompt": "An overlay of weather sounds like rain, wind, and thunder altering the acoustic texture and masking other sources."
+      },
+      "human_activity": {
+        "description": "Overlay for the density and type of human presence (crowd size, chatter intensity, cheering, speech announcements).",
+        "clap_prompt": "An acoustic context defined by human activity such as crowd chatter, cheering, and speech announcements across different spaces."
+      },
+      "mechanical_activity": {
+        "description": "Overlay for machinery, construction, or tool operation that can dominate otherwise quiet scenes.",
+        "clap_prompt": "An acoustic condition where mechanical tools, engines, or industrial machines dominate the soundscape."
+      },
+      "animal_activity": {
+        "description": "Overlay for fauna presence (birds, insects, pets, livestock) shaping the biophonic layer of the scene.",
+        "clap_prompt": "A soundscape characterized by animals such as birds, insects, or pets that contribute to the natural background."
+      },
+      "ceremonial_festival": {
+        "description": "Overlay for ritual or festivity contexts (bells, chants, choirs, processions, crowd noise) that can occur indoor or outdoor.",
+        "clap_prompt": "An acoustic environment rich with celebratory or ritual sounds such as bells, chants, and crowds, recorded in indoor or outdoor spaces."
+      }
+    }
+  },
+
+  "cross_links": {
+    "outdoor": ["indoor/public_large"],
+    "outdoor/urban": ["indoor/public_large/entertainment"],
+    "indoor": ["outdoor/transport"]
+  }
+}

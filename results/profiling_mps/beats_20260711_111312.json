@@ -1,0 +1,504 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "beats",
+    "model_class": "models.beats.model.BEATs",
+    "checkpoint_path": "models/beats/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+    "model_configuration": {},
+    "module_sample_rate": 16000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:13:03.641295+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 16000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 160000,
+    "waveform_shape": [
+      1,
+      160000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 160000,
+      "waveform_shape": [
+        1,
+        160000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.18650399998296052,
+      0.19699170801322907,
+      0.18919037503656,
+      0.18877095897914842,
+      0.18962075002491474,
+      0.18671529099810869,
+      0.19804137502796948,
+      0.1936236250330694,
+      0.19015766598749906,
+      0.18887816602364182,
+      0.19126683298964053,
+      0.1872392080258578,
+      0.19624583300901577,
+      0.19033695803955197,
+      0.19555612502153963,
+      0.19482395896920934,
+      0.1948716250481084,
+      0.19022037496324629,
+      0.1928194999927655,
+      0.19073358399327844
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.18650399998296052,
+      "max": 0.19804137502796948,
+      "mean": 0.19163039575796575,
+      "std": 0.0035159789016664302,
+      "median": 0.1905352710164152,
+      "skewness": 0.32116346639894405,
+      "kurtosis": -1.0465978590562586,
+      "iqr": 0.005723552705603652,
+      "p75": 0.1948358754889341,
+      "p90": 0.1963204205094371
+    }
+  },
+  "parameters": {
+    "total_parameters": 90717055,
+    "trainable_parameters": 90717055,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 90.717055,
+    "trainable_parameters_millions": 90.717055,
+    "parameter_memory_mb": 362.86822,
+    "bytes_by_dtype": {
+      "torch.float32": 362868220
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 2413.068288
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.406272
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 2452.422656
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2451.21024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.406272
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 2452.422656
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.1960320000002866,
+          0.016384000000016385,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.06062080000001515,
+        "std": 0.2672731061970183
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 49586377472,
+        "unsupported_ops": {
+          "aten::mul": 167,
+          "aten::sub": 33,
+          "aten::add": 58,
+          "aten::as_strided": 1,
+          "aten::mean": 2,
+          "aten::pad": 3,
+          "aten::hann_window": 1,
+          "aten::pow": 2,
+          "aten::fft_rfft": 1,
+          "aten::abs": 2,
+          "aten::div": 18,
+          "aten::log": 3,
+          "aten::min": 2,
+          "aten::numpy_T": 1,
+          "aten::_weight_norm": 1,
+          "aten::gelu": 13,
+          "prim::PythonOp.GradMultiply": 12,
+          "aten::lt": 1,
+          "aten::where": 1,
+          "aten::add_": 1,
+          "aten::embedding": 1,
+          "aten::repeat": 1,
+          "aten::sum": 12,
+          "aten::sigmoid": 13,
+          "aten::softmax": 12
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 97851527,
+        "trainable_params": 97851527,
+        "total_mult_adds": 42254738543,
+        "summary": "==============================================================================================================\nLayer (type:depth-idx)                                       Output Shape              Param #\n==============================================================================================================\nBEATs                                                        [1, 527]                  --\n\u251c\u2500BEATsModel: 1-1                                            --                        --\n\u2502    \u2514\u2500Conv2d: 2-1                                           [1, 512, 62, 8]           131,072\n\u2502    \u2514\u2500LayerNorm: 2-2                                        [1, 496, 512]             1,024\n\u2502    \u2514\u2500Linear: 2-3                                           [1, 496, 768]             393,984\n\u2502    \u2514\u2500Dropout: 2-4                                          [1, 496, 768]             --\n\u2502    \u2514\u2500TransformerEncoder: 2-5                               [1, 496, 768]             --\n\u2502    \u2502    \u2514\u2500Sequential: 3-1                                  [1, 768, 496]             4,719,488\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-2                                   [1, 496, 768]             1,536\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                                  --                        85,064,688\n\u2502    \u2514\u2500Dropout: 2-6                                          [1, 496, 768]             --\n\u2502    \u2514\u2500Linear: 2-7                                           [1, 496, 527]             405,263\n==============================================================================================================\nTotal params: 97,851,527\nTrainable params: 97,851,527\nNon-trainable params: 0\nTotal mult-adds (G): 42.25\n==============================================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 442.70\nParams size (MB): 343.99\nEstimated Total Size (MB): 787.33\n=============================================================================================================="
+      },
+      "flops": 49586377472,
+      "macs_estimated": 24793188736.0,
+      "gflops": 49.586377472,
+      "gmacs_estimated": 24.793188736
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 49586377472,
+        "unsupported_ops": {
+          "aten::mul": 167,
+          "aten::sub": 33,
+          "aten::add": 58,
+          "aten::as_strided": 1,
+          "aten::mean": 2,
+          "aten::pad": 3,
+          "aten::hann_window": 1,
+          "aten::pow": 2,
+          "aten::fft_rfft": 1,
+          "aten::abs": 2,
+          "aten::div": 18,
+          "aten::log": 3,
+          "aten::min": 2,
+          "aten::numpy_T": 1,
+          "aten::_weight_norm": 1,
+          "aten::gelu": 13,
+          "prim::PythonOp.GradMultiply": 12,
+          "aten::lt": 1,
+          "aten::where": 1,
+          "aten::add_": 1,
+          "aten::embedding": 1,
+          "aten::repeat": 1,
+          "aten::sum": 12,
+          "aten::sigmoid": 13,
+          "aten::softmax": 12
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 97851527,
+        "trainable_params": 97851527,
+        "total_mult_adds": 42254738543,
+        "summary": "==============================================================================================================\nLayer (type:depth-idx)                                       Output Shape              Param #\n==============================================================================================================\nBEATs                                                        [1, 527]                  --\n\u251c\u2500BEATsModel: 1-1                                            --                        --\n\u2502    \u2514\u2500Conv2d: 2-1                                           [1, 512, 62, 8]           131,072\n\u2502    \u2514\u2500LayerNorm: 2-2                                        [1, 496, 512]             1,024\n\u2502    \u2514\u2500Linear: 2-3                                           [1, 496, 768]             393,984\n\u2502    \u2514\u2500Dropout: 2-4                                          [1, 496, 768]             --\n\u2502    \u2514\u2500TransformerEncoder: 2-5                               [1, 496, 768]             --\n\u2502    \u2502    \u2514\u2500Sequential: 3-1                                  [1, 768, 496]             4,719,488\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-2                                   [1, 496, 768]             1,536\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                                  --                        85,064,688\n\u2502    \u2514\u2500Dropout: 2-6                                          [1, 496, 768]             --\n\u2502    \u2514\u2500Linear: 2-7                                           [1, 496, 527]             405,263\n==============================================================================================================\nTotal params: 97,851,527\nTrainable params: 97,851,527\nNon-trainable params: 0\nTotal mult-adds (G): 42.25\n==============================================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 442.70\nParams size (MB): 343.99\nEstimated Total Size (MB): 787.33\n=============================================================================================================="
+      },
+      "flops": 49586377472,
+      "macs_estimated": 24793188736.0,
+      "gflops": 49.586377472,
+      "gmacs_estimated": 24.793188736
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 2800,
+    "seconds": 0.175,
+    "sample_rate": 16000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 3765,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 3140,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2828,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2672,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (15 x 128). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2750,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (15 x 128). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2789,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (15 x 128). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2809,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2799,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Calculated padded input size per channel: (15 x 128). Kernel size: (16 x 16). Kernel size can't be greater than actual input size"
+      },
+      {
+        "samples": 2804,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2802,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2801,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2800,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

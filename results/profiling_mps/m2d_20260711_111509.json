@@ -1,0 +1,502 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "m2d",
+    "model_class": "models.m2d.model.M2D",
+    "checkpoint_path": "models/m2d/weights_ep69it3124-0.47998.pth",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:15:05.054391+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.091870584001299,
+      0.08390508301090449,
+      0.08450404205359519,
+      0.08470054197823629,
+      0.08487983397208154,
+      0.08490108302794397,
+      0.08722225000383332,
+      0.08468658302444965,
+      0.08652025001356378,
+      0.0885974169941619,
+      0.0866014159983024,
+      0.08945791696896777,
+      0.08617041702382267,
+      0.08659325004555285,
+      0.08571370801655576,
+      0.08490862505277619,
+      0.08838824997656047,
+      0.0891025000018999,
+      0.08845958299934864,
+      0.08667399996193126
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.08390508301090449,
+      "max": 0.091870584001299,
+      "mean": 0.08669286670628935,
+      "std": 0.002073418534660524,
+      "median": 0.08655675002955832,
+      "skewness": 0.8185442247134309,
+      "kurtosis": 0.32905198588380946,
+      "iqr": 0.003510312468279153,
+      "p75": 0.08840608323225752,
+      "p90": 0.08913804169860669
+    }
+  },
+  "parameters": {
+    "total_parameters": 85898257,
+    "trainable_parameters": 85898255,
+    "non_trainable_parameters": 2,
+    "total_parameters_millions": 85.898257,
+    "trainable_parameters_millions": 85.898255,
+    "parameter_memory_mb": 343.593028,
+    "bytes_by_dtype": {
+      "torch.float32": 343593028
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 3690.954752
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3692.838912
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3692.838912
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 28963003152,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 3,
+          "aten::add": 28,
+          "aten::sqrt": 1,
+          "aten::log": 1,
+          "aten::sub": 1,
+          "aten::div": 1,
+          "aten::mul": 12,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::mean": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "encoder.backbone.blocks.0.drop_path",
+          "encoder.backbone.blocks.1.drop_path",
+          "encoder.backbone.blocks.10.drop_path",
+          "encoder.backbone.blocks.11.drop_path",
+          "encoder.backbone.blocks.2.drop_path",
+          "encoder.backbone.blocks.3.drop_path",
+          "encoder.backbone.blocks.4.drop_path",
+          "encoder.backbone.blocks.5.drop_path",
+          "encoder.backbone.blocks.6.drop_path",
+          "encoder.backbone.blocks.7.drop_path",
+          "encoder.backbone.blocks.8.drop_path",
+          "encoder.backbone.blocks.9.drop_path",
+          "encoder.backbone.patch_embed.norm",
+          "encoder.backbone.pos_drop",
+          "encoder.backbone.pre_logits"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 85898257,
+        "trainable_params": 85898255,
+        "total_mult_adds": 146647823,
+        "summary": "===============================================================================================\nLayer (type:depth-idx)                        Output Shape              Param #\n===============================================================================================\nM2D                                           [1, 527]                  --\n\u251c\u2500M2DAudioEncoder: 1-1                        [1, 310, 768]             --\n\u2502    \u2514\u2500MelSpectrogramTransform: 2-1           [1, 1, 80, 1001]          --\n\u2502    \u2502    \u2514\u2500MelSpectrogram: 3-1               [1, 80, 1001]             --\n\u2502    \u2514\u2500LocalViT: 2-2                          --                        239,618\n\u2502    \u2502    \u2514\u2500PatchEmbed: 3-2                   [1, 310, 768]             197,376\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                   --                        85,054,464\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-4                    [1, 311, 768]             1,536\n\u251c\u2500BatchNorm1d: 1-2                            [1, 768, 1]               --\n\u251c\u2500Linear: 1-3                                 [1, 527]                  405,263\n===============================================================================================\nTotal params: 85,898,257\nTrainable params: 85,898,255\nNon-trainable params: 2\nTotal mult-adds (M): 146.65\n===============================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 256.04\nParams size (MB): 342.63\nEstimated Total Size (MB): 599.96\n==============================================================================================="
+      },
+      "flops": 28963003152,
+      "macs_estimated": 14481501576.0,
+      "gflops": 28.963003152,
+      "gmacs_estimated": 14.481501576
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 28963003152,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 3,
+          "aten::add": 28,
+          "aten::sqrt": 1,
+          "aten::log": 1,
+          "aten::sub": 1,
+          "aten::div": 1,
+          "aten::mul": 12,
+          "aten::softmax": 12,
+          "aten::gelu": 12,
+          "aten::mean": 1,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "encoder.backbone.blocks.0.drop_path",
+          "encoder.backbone.blocks.1.drop_path",
+          "encoder.backbone.blocks.10.drop_path",
+          "encoder.backbone.blocks.11.drop_path",
+          "encoder.backbone.blocks.2.drop_path",
+          "encoder.backbone.blocks.3.drop_path",
+          "encoder.backbone.blocks.4.drop_path",
+          "encoder.backbone.blocks.5.drop_path",
+          "encoder.backbone.blocks.6.drop_path",
+          "encoder.backbone.blocks.7.drop_path",
+          "encoder.backbone.blocks.8.drop_path",
+          "encoder.backbone.blocks.9.drop_path",
+          "encoder.backbone.patch_embed.norm",
+          "encoder.backbone.pos_drop",
+          "encoder.backbone.pre_logits"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 85898257,
+        "trainable_params": 85898255,
+        "total_mult_adds": 146647823,
+        "summary": "===============================================================================================\nLayer (type:depth-idx)                        Output Shape              Param #\n===============================================================================================\nM2D                                           [1, 527]                  --\n\u251c\u2500M2DAudioEncoder: 1-1                        [1, 310, 768]             --\n\u2502    \u2514\u2500MelSpectrogramTransform: 2-1           [1, 1, 80, 1001]          --\n\u2502    \u2502    \u2514\u2500MelSpectrogram: 3-1               [1, 80, 1001]             --\n\u2502    \u2514\u2500LocalViT: 2-2                          --                        239,618\n\u2502    \u2502    \u2514\u2500PatchEmbed: 3-2                   [1, 310, 768]             197,376\n\u2502    \u2502    \u2514\u2500ModuleList: 3-3                   --                        85,054,464\n\u2502    \u2502    \u2514\u2500LayerNorm: 3-4                    [1, 311, 768]             1,536\n\u251c\u2500BatchNorm1d: 1-2                            [1, 768, 1]               --\n\u251c\u2500Linear: 1-3                                 [1, 527]                  405,263\n===============================================================================================\nTotal params: 85,898,257\nTrainable params: 85,898,255\nNon-trainable params: 2\nTotal mult-adds (M): 146.65\n===============================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 256.04\nParams size (MB): 342.63\nEstimated Total Size (MB): 599.96\n==============================================================================================="
+      },
+      "flops": 28963003152,
+      "macs_estimated": 14481501576.0,
+      "gflops": 28.963003152,
+      "gmacs_estimated": 14.481501576
+    }
+  },
+  "minimum_input": {
+    "status": "search_aborted_with_non_size_error",
+    "samples": null,
+    "seconds": null,
+    "sample_rate": 32000,
+    "attempt_count": 11,
+    "attempts_tail": [
+      {
+        "samples": 320000,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 160016,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 80024,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 40028,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 20030,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 10031,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 5031,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2531,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 1281,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 656,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 344,
+        "ok": false,
+        "classification": "unrelated_runtime_error",
+        "error": "Signal length shorter than reflect padding length (n_fft // 2)."
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

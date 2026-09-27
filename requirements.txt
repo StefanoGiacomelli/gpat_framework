@@ -1,0 +1,44 @@
+# --- Basic ---
+packaging
+tqdm
+loguru
+numpy
+networkx
+pandas
+matplotlib
+
+# --- Audio & ML/DL stacks ---
+torch
+torchaudio
+torchcodec
+torchvision
+torchinfo
+fvcore
+torchlibrosa
+transformers
+timm==0.4.5
+efficientnet-pytorch==0.7.0
+einops
+scikit-learn
+pytorch-lightning
+torchmetrics
+tensorboard
+laion-clap
+onnx
+onnxscript
+
+# --- Audio data processing ---
+yt-dlp
+librosa
+soundfile
+soundata
+nnAudio
+pyloudnorm
+git+https://github.com/jenellefeather/chcochleagram.git
+
+# --- Real-time GUI and audio device input ---
+PySide6
+sounddevice
+
+#-e ./taxonomy/salt/py-salt
+#-e ./taxonomy/audioset_tools

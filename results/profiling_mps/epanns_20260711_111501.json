@@ -1,0 +1,483 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "epanns",
+    "model_class": "models.epanns.model.EPANNs",
+    "checkpoint_path": "models/epanns/checkpoint_closeto_.44.pt",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:14:59.894184+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.05397112498758361,
+      0.049596000055316836,
+      0.054298333008773625,
+      0.05556970799807459,
+      0.05273287498857826,
+      0.05470425001112744,
+      0.05520583299221471,
+      0.05429833399830386,
+      0.05648729205131531,
+      0.05227170797297731,
+      0.05266904202289879,
+      0.053997416980564594,
+      0.05196066701319069,
+      0.05436979199294001,
+      0.05119404097786173,
+      0.05235716700553894,
+      0.051627582986839116,
+      0.05381737498100847,
+      0.05274487496353686,
+      0.05167266697390005
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.049596000055316836,
+      "max": 0.05648729205131531,
+      "mean": 0.05327730419812724,
+      "std": 0.0016798244809023764,
+      "median": 0.053281124972272664,
+      "skewness": -0.15630031023121949,
+      "kurtosis": -0.11413776805012121,
+      "iqr": 0.002122250763932243,
+      "p75": 0.0543161984969629,
+      "p90": 0.0552422204928007
+    }
+  },
+  "parameters": {
+    "total_parameters": 24289295,
+    "trainable_parameters": 23205839,
+    "non_trainable_parameters": 1083456,
+    "total_parameters_millions": 24.289295,
+    "trainable_parameters_millions": 23.205839,
+    "parameter_memory_mb": 97.15718,
+    "bytes_by_dtype": {
+      "torch.float32": 97157180
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 3413.704704
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.300224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.300224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.300224
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.431296
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 3461.988352
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.300224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.300224
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.431296
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 3461.988352
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.13107200000013108,
+          0.5570559999996476,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.034406399999988936,
+        "std": 0.12645266414135015
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 13529726656,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 2,
+          "aten::log10": 1,
+          "aten::mul": 1,
+          "aten::sub_": 1,
+          "aten::avg_pool2d": 6,
+          "aten::mean": 2,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "model.spec_augmenter",
+          "model.spec_augmenter.freq_dropper",
+          "model.spec_augmenter.time_dropper"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 24289295,
+        "trainable_params": 23205839,
+        "total_mult_adds": 13466271119,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nEPANNs                                   [1, 527]                  --\n\u251c\u2500Cnn14Pruned: 1-1                       [1, 527]                  --\n\u2502    \u2514\u2500Spectrogram: 2-1                  [1, 1, 1001, 513]         --\n\u2502    \u2502    \u2514\u2500STFT: 3-1                    --                        (1,050,624)\n\u2502    \u2514\u2500LogmelFilterBank: 2-2             [1, 1, 1001, 64]          (32,832)\n\u2502    \u2514\u2500BatchNorm2d: 2-3                  [1, 64, 1001, 1]          128\n\u2502    \u2514\u2500ConvBlockPruned: 2-4              [1, 64, 500, 32]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-2                  [1, 64, 1001, 64]         576\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-3             [1, 64, 1001, 64]         128\n\u2502    \u2502    \u2514\u2500Conv2d: 3-4                  [1, 64, 1001, 64]         36,864\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-5             [1, 64, 1001, 64]         128\n\u2502    \u2514\u2500ConvBlockPruned: 2-5              [1, 128, 250, 16]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-6                  [1, 128, 500, 32]         73,728\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-7             [1, 128, 500, 32]         256\n\u2502    \u2502    \u2514\u2500Conv2d: 3-8                  [1, 128, 500, 32]         147,456\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-9             [1, 128, 500, 32]         256\n\u2502    \u2514\u2500ConvBlockPruned: 2-6              [1, 256, 125, 8]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-10                 [1, 256, 250, 16]         294,912\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-11            [1, 256, 250, 16]         512\n\u2502    \u2502    \u2514\u2500Conv2d: 3-12                 [1, 256, 250, 16]         589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-13            [1, 256, 250, 16]         512\n\u2502    \u2514\u2500ConvBlockPruned: 2-7              [1, 256, 62, 4]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-14                 [1, 256, 125, 8]          589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-15            [1, 256, 125, 8]          512\n\u2502    \u2502    \u2514\u2500Conv2d: 3-16                 [1, 256, 125, 8]          589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-17            [1, 256, 125, 8]          512\n\u2502    \u2514\u2500ConvBlockPruned: 2-8              [1, 512, 31, 2]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-18                 [1, 512, 62, 4]           1,179,648\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-19            [1, 512, 62, 4]           1,024\n\u2502    \u2502    \u2514\u2500Conv2d: 3-20                 [1, 512, 62, 4]           2,359,296\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-21            [1, 512, 62, 4]           1,024\n\u2502    \u2514\u2500ConvBlockPruned: 2-9              [1, 1024, 31, 2]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-22                 [1, 1024, 31, 2]          4,718,592\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-23            [1, 1024, 31, 2]          2,048\n\u2502    \u2502    \u2514\u2500Conv2d: 3-24                 [1, 1024, 31, 2]          9,437,184\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-25            [1, 1024, 31, 2]          2,048\n\u2502    \u2514\u2500Linear: 2-10                      [1, 2048]                 2,099,200\n\u2502    \u2514\u2500Linear: 2-11                      [1, 527]                  1,079,823\n==========================================================================================\nTotal params: 24,289,295\nTrainable params: 23,205,839\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 13.47\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 253.06\nParams size (MB): 97.16\nEstimated Total Size (MB): 351.49\n=========================================================================================="
+      },
+      "flops": 13529726656,
+      "macs_estimated": 6764863328.0,
+      "gflops": 13.529726656,
+      "gmacs_estimated": 6.764863328
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 13529726656,
+        "unsupported_ops": {
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 2,
+          "aten::log10": 1,
+          "aten::mul": 1,
+          "aten::sub_": 1,
+          "aten::avg_pool2d": 6,
+          "aten::mean": 2,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "model.spec_augmenter",
+          "model.spec_augmenter.freq_dropper",
+          "model.spec_augmenter.time_dropper"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 24289295,
+        "trainable_params": 23205839,
+        "total_mult_adds": 13466271119,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nEPANNs                                   [1, 527]                  --\n\u251c\u2500Cnn14Pruned: 1-1                       [1, 527]                  --\n\u2502    \u2514\u2500Spectrogram: 2-1                  [1, 1, 1001, 513]         --\n\u2502    \u2502    \u2514\u2500STFT: 3-1                    --                        (1,050,624)\n\u2502    \u2514\u2500LogmelFilterBank: 2-2             [1, 1, 1001, 64]          (32,832)\n\u2502    \u2514\u2500BatchNorm2d: 2-3                  [1, 64, 1001, 1]          128\n\u2502    \u2514\u2500ConvBlockPruned: 2-4              [1, 64, 500, 32]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-2                  [1, 64, 1001, 64]         576\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-3             [1, 64, 1001, 64]         128\n\u2502    \u2502    \u2514\u2500Conv2d: 3-4                  [1, 64, 1001, 64]         36,864\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-5             [1, 64, 1001, 64]         128\n\u2502    \u2514\u2500ConvBlockPruned: 2-5              [1, 128, 250, 16]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-6                  [1, 128, 500, 32]         73,728\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-7             [1, 128, 500, 32]         256\n\u2502    \u2502    \u2514\u2500Conv2d: 3-8                  [1, 128, 500, 32]         147,456\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-9             [1, 128, 500, 32]         256\n\u2502    \u2514\u2500ConvBlockPruned: 2-6              [1, 256, 125, 8]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-10                 [1, 256, 250, 16]         294,912\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-11            [1, 256, 250, 16]         512\n\u2502    \u2502    \u2514\u2500Conv2d: 3-12                 [1, 256, 250, 16]         589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-13            [1, 256, 250, 16]         512\n\u2502    \u2514\u2500ConvBlockPruned: 2-7              [1, 256, 62, 4]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-14                 [1, 256, 125, 8]          589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-15            [1, 256, 125, 8]          512\n\u2502    \u2502    \u2514\u2500Conv2d: 3-16                 [1, 256, 125, 8]          589,824\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-17            [1, 256, 125, 8]          512\n\u2502    \u2514\u2500ConvBlockPruned: 2-8              [1, 512, 31, 2]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-18                 [1, 512, 62, 4]           1,179,648\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-19            [1, 512, 62, 4]           1,024\n\u2502    \u2502    \u2514\u2500Conv2d: 3-20                 [1, 512, 62, 4]           2,359,296\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-21            [1, 512, 62, 4]           1,024\n\u2502    \u2514\u2500ConvBlockPruned: 2-9              [1, 1024, 31, 2]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-22                 [1, 1024, 31, 2]          4,718,592\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-23            [1, 1024, 31, 2]          2,048\n\u2502    \u2502    \u2514\u2500Conv2d: 3-24                 [1, 1024, 31, 2]          9,437,184\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-25            [1, 1024, 31, 2]          2,048\n\u2502    \u2514\u2500Linear: 2-10                      [1, 2048]                 2,099,200\n\u2502    \u2514\u2500Linear: 2-11                      [1, 527]                  1,079,823\n==========================================================================================\nTotal params: 24,289,295\nTrainable params: 23,205,839\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 13.47\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 253.06\nParams size (MB): 97.16\nEstimated Total Size (MB): 351.49\n=========================================================================================="
+      },
+      "flops": 13529726656,
+      "macs_estimated": 6764863328.0,
+      "gflops": 13.529726656,
+      "gmacs_estimated": 6.764863328
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 9920,
+    "seconds": 0.31,
+    "sample_rate": 32000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 20,
+    "attempts_tail": [
+      {
+        "samples": 8781,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9406,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9719,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9875,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9953,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 9914,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9934,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 9924,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 9919,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Given input size: (512x1x4). Calculated output size: (512x0x2). Output size is too small"
+      },
+      {
+        "samples": 9922,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 9921,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 9920,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

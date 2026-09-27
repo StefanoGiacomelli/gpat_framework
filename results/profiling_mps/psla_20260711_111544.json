@@ -1,0 +1,673 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "psla",
+    "model_class": "models.psla.model.EffNetAttention",
+    "checkpoint_path": "models/psla/as_mdl_0_wa.pth",
+    "model_configuration": {
+      "label_dim": 527,
+      "b": 2,
+      "pretrain": false,
+      "head_num": 4
+    },
+    "module_sample_rate": 16000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:15:26.618036+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 16000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 160000,
+    "waveform_shape": [
+      1,
+      160000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 160000,
+      "waveform_shape": [
+        1,
+        160000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.4906745419721119,
+      0.49303962499834597,
+      0.4940816250164062,
+      0.4896179579664022,
+      0.49189933302113786,
+      0.4914623750373721,
+      0.49683129199547693,
+      0.48996350000379607,
+      0.49485512502724305,
+      0.49282208300428465,
+      0.4950984999886714,
+      0.49187887500738725,
+      0.4939736249507405,
+      0.49228183296509087,
+      0.4938319170032628,
+      0.4930917089805007,
+      0.49065504100872204,
+      0.4925915420171805,
+      0.49026541697094217,
+      0.4934115830110386
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.4896179579664022,
+      "max": 0.49683129199547693,
+      "mean": 0.4926163749973057,
+      "std": 0.0018800890290355025,
+      "median": 0.49270681251073256,
+      "skewness": 0.2965288436536163,
+      "kurtosis": -0.17635789441646388,
+      "iqr": 0.002601927219075151,
+      "p75": 0.4938673439901322,
+      "p90": 0.4948794625233859
+    }
+  },
+  "parameters": {
+    "total_parameters": 13640766,
+    "trainable_parameters": 13640766,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 13.640766,
+    "trainable_parameters_millions": 13.640766,
+    "parameter_memory_mb": 54.563064,
+    "bytes_by_dtype": {
+      "torch.float32": 54563064
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 4281.663488
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4362.027008
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.010624
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4362.027008
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.016384000000471133,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0008192000000235566,
+        "std": 0.0036635737744410038
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 1980337856,
+        "unsupported_ops": {
+          "aten::mean": 2,
+          "aten::sub": 9,
+          "aten::add": 23,
+          "aten::as_strided": 1,
+          "aten::pad": 28,
+          "aten::mul": 38,
+          "aten::hann_window": 1,
+          "aten::fft_rfft": 1,
+          "aten::abs": 1,
+          "aten::pow": 1,
+          "aten::div": 8,
+          "aten::log": 2,
+          "aten::min": 1,
+          "aten::numpy_T": 1,
+          "aten::rsub": 1,
+          "prim::PythonOp.SwishImplementation": 69,
+          "aten::sigmoid": 31,
+          "aten::avg_pool2d": 1,
+          "aten::sum": 9
+        },
+        "uncalled_modules": [
+          "effnet._avg_pooling",
+          "effnet._blocks.0._project_conv.static_padding",
+          "effnet._blocks.0._se_expand.static_padding",
+          "effnet._blocks.0._se_reduce.static_padding",
+          "effnet._blocks.1._project_conv.static_padding",
+          "effnet._blocks.1._se_expand.static_padding",
+          "effnet._blocks.1._se_reduce.static_padding",
+          "effnet._blocks.10._expand_conv.static_padding",
+          "effnet._blocks.10._project_conv.static_padding",
+          "effnet._blocks.10._se_expand.static_padding",
+          "effnet._blocks.10._se_reduce.static_padding",
+          "effnet._blocks.11._expand_conv.static_padding",
+          "effnet._blocks.11._project_conv.static_padding",
+          "effnet._blocks.11._se_expand.static_padding",
+          "effnet._blocks.11._se_reduce.static_padding",
+          "effnet._blocks.12._expand_conv.static_padding",
+          "effnet._blocks.12._project_conv.static_padding",
+          "effnet._blocks.12._se_expand.static_padding",
+          "effnet._blocks.12._se_reduce.static_padding",
+          "effnet._blocks.13._expand_conv.static_padding",
+          "effnet._blocks.13._project_conv.static_padding",
+          "effnet._blocks.13._se_expand.static_padding",
+          "effnet._blocks.13._se_reduce.static_padding",
+          "effnet._blocks.14._expand_conv.static_padding",
+          "effnet._blocks.14._project_conv.static_padding",
+          "effnet._blocks.14._se_expand.static_padding",
+          "effnet._blocks.14._se_reduce.static_padding",
+          "effnet._blocks.15._expand_conv.static_padding",
+          "effnet._blocks.15._project_conv.static_padding",
+          "effnet._blocks.15._se_expand.static_padding",
+          "effnet._blocks.15._se_reduce.static_padding",
+          "effnet._blocks.16._expand_conv.static_padding",
+          "effnet._blocks.16._project_conv.static_padding",
+          "effnet._blocks.16._se_expand.static_padding",
+          "effnet._blocks.16._se_reduce.static_padding",
+          "effnet._blocks.17._expand_conv.static_padding",
+          "effnet._blocks.17._project_conv.static_padding",
+          "effnet._blocks.17._se_expand.static_padding",
+          "effnet._blocks.17._se_reduce.static_padding",
+          "effnet._blocks.18._expand_conv.static_padding",
+          "effnet._blocks.18._project_conv.static_padding",
+          "effnet._blocks.18._se_expand.static_padding",
+          "effnet._blocks.18._se_reduce.static_padding",
+          "effnet._blocks.19._expand_conv.static_padding",
+          "effnet._blocks.19._project_conv.static_padding",
+          "effnet._blocks.19._se_expand.static_padding",
+          "effnet._blocks.19._se_reduce.static_padding",
+          "effnet._blocks.2._expand_conv.static_padding",
+          "effnet._blocks.2._project_conv.static_padding",
+          "effnet._blocks.2._se_expand.static_padding",
+          "effnet._blocks.2._se_reduce.static_padding",
+          "effnet._blocks.20._expand_conv.static_padding",
+          "effnet._blocks.20._project_conv.static_padding",
+          "effnet._blocks.20._se_expand.static_padding",
+          "effnet._blocks.20._se_reduce.static_padding",
+          "effnet._blocks.21._expand_conv.static_padding",
+          "effnet._blocks.21._project_conv.static_padding",
+          "effnet._blocks.21._se_expand.static_padding",
+          "effnet._blocks.21._se_reduce.static_padding",
+          "effnet._blocks.22._expand_conv.static_padding",
+          "effnet._blocks.22._project_conv.static_padding",
+          "effnet._blocks.22._se_expand.static_padding",
+          "effnet._blocks.22._se_reduce.static_padding",
+          "effnet._blocks.3._expand_conv.static_padding",
+          "effnet._blocks.3._project_conv.static_padding",
+          "effnet._blocks.3._se_expand.static_padding",
+          "effnet._blocks.3._se_reduce.static_padding",
+          "effnet._blocks.4._expand_conv.static_padding",
+          "effnet._blocks.4._project_conv.static_padding",
+          "effnet._blocks.4._se_expand.static_padding",
+          "effnet._blocks.4._se_reduce.static_padding",
+          "effnet._blocks.5._expand_conv.static_padding",
+          "effnet._blocks.5._project_conv.static_padding",
+          "effnet._blocks.5._se_expand.static_padding",
+          "effnet._blocks.5._se_reduce.static_padding",
+          "effnet._blocks.6._expand_conv.static_padding",
+          "effnet._blocks.6._project_conv.static_padding",
+          "effnet._blocks.6._se_expand.static_padding",
+          "effnet._blocks.6._se_reduce.static_padding",
+          "effnet._blocks.7._expand_conv.static_padding",
+          "effnet._blocks.7._project_conv.static_padding",
+          "effnet._blocks.7._se_expand.static_padding",
+          "effnet._blocks.7._se_reduce.static_padding",
+          "effnet._blocks.8._expand_conv.static_padding",
+          "effnet._blocks.8._project_conv.static_padding",
+          "effnet._blocks.8._se_expand.static_padding",
+          "effnet._blocks.8._se_reduce.static_padding",
+          "effnet._blocks.9._expand_conv.static_padding",
+          "effnet._blocks.9._project_conv.static_padding",
+          "effnet._blocks.9._se_expand.static_padding",
+          "effnet._blocks.9._se_reduce.static_padding",
+          "effnet._conv_head.static_padding",
+          "effnet._dropout",
+          "effnet._fc"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 13640766,
+        "trainable_params": 13640766,
+        "total_mult_adds": 190158576,
+        "summary": "=========================================================================================================\nLayer (type:depth-idx)                                  Output Shape              Param #\n=========================================================================================================\nEffNetAttention                                         [1, 527]                  --\n\u251c\u2500EfficientNet: 1-1                                     --                        --\n\u2502    \u2514\u2500Conv2dStaticSamePadding: 2-1                     [1, 32, 64, 512]          288\n\u2502    \u2502    \u2514\u2500ZeroPad2d: 3-1                              [1, 1, 130, 1026]         --\n\u2502    \u2514\u2500BatchNorm2d: 2-2                                 [1, 32, 64, 512]          64\n\u2502    \u2514\u2500MemoryEfficientSwish: 2-3                        [1, 32, 64, 512]          --\n\u2502    \u2514\u2500ModuleList: 2-4                                  --                        --\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-2                            [1, 16, 64, 512]          1,448\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-3                            [1, 16, 64, 512]          612\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-4                            [1, 24, 32, 256]          6,004\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-5                            [1, 24, 32, 256]          10,710\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-6                            [1, 24, 32, 256]          10,710\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-7                            [1, 48, 16, 128]          16,518\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-8                            [1, 48, 16, 128]          43,308\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-9                            [1, 48, 16, 128]          43,308\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-10                           [1, 88, 8, 64]            50,300\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-11                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-12                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-13                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-14                           [1, 120, 8, 64]           149,158\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-15                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-16                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-17                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-18                           [1, 208, 4, 32]           301,406\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-19                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-20                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-21                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-22                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-23                           [1, 352, 4, 32]           846,900\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-24                           [1, 352, 4, 32]           1,888,920\n\u2502    \u2514\u2500Conv2dStaticSamePadding: 2-5                     [1, 1408, 4, 32]          495,616\n\u2502    \u2502    \u2514\u2500Identity: 3-25                              [1, 352, 4, 32]           --\n\u2502    \u2514\u2500BatchNorm2d: 2-6                                 [1, 1408, 4, 32]          2,816\n\u2502    \u2514\u2500MemoryEfficientSwish: 2-7                        [1, 1408, 4, 32]          --\n\u251c\u2500AvgPool2d: 1-2                                        [1, 1408, 1, 32]          --\n\u251c\u2500MHeadAttention: 1-3                                   [1, 527]                  4\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-26                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-27                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-28                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-29                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-30                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-31                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-32                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-33                                [1, 527, 32, 1]           742,543\n=========================================================================================================\nTotal params: 13,640,766\nTrainable params: 13,640,766\nNon-trainable params: 0\nTotal mult-adds (M): 190.16\n=========================================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 205.72\nParams size (MB): 24.03\nEstimated Total Size (MB): 230.39\n========================================================================================================="
+      },
+      "flops": 1980337856,
+      "macs_estimated": 990168928.0,
+      "gflops": 1.980337856,
+      "gmacs_estimated": 0.990168928
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 1980337856,
+        "unsupported_ops": {
+          "aten::mean": 2,
+          "aten::sub": 9,
+          "aten::add": 23,
+          "aten::as_strided": 1,
+          "aten::pad": 28,
+          "aten::mul": 38,
+          "aten::hann_window": 1,
+          "aten::fft_rfft": 1,
+          "aten::abs": 1,
+          "aten::pow": 1,
+          "aten::div": 8,
+          "aten::log": 2,
+          "aten::min": 1,
+          "aten::numpy_T": 1,
+          "aten::rsub": 1,
+          "prim::PythonOp.SwishImplementation": 69,
+          "aten::sigmoid": 31,
+          "aten::avg_pool2d": 1,
+          "aten::sum": 9
+        },
+        "uncalled_modules": [
+          "effnet._avg_pooling",
+          "effnet._blocks.0._project_conv.static_padding",
+          "effnet._blocks.0._se_expand.static_padding",
+          "effnet._blocks.0._se_reduce.static_padding",
+          "effnet._blocks.1._project_conv.static_padding",
+          "effnet._blocks.1._se_expand.static_padding",
+          "effnet._blocks.1._se_reduce.static_padding",
+          "effnet._blocks.10._expand_conv.static_padding",
+          "effnet._blocks.10._project_conv.static_padding",
+          "effnet._blocks.10._se_expand.static_padding",
+          "effnet._blocks.10._se_reduce.static_padding",
+          "effnet._blocks.11._expand_conv.static_padding",
+          "effnet._blocks.11._project_conv.static_padding",
+          "effnet._blocks.11._se_expand.static_padding",
+          "effnet._blocks.11._se_reduce.static_padding",
+          "effnet._blocks.12._expand_conv.static_padding",
+          "effnet._blocks.12._project_conv.static_padding",
+          "effnet._blocks.12._se_expand.static_padding",
+          "effnet._blocks.12._se_reduce.static_padding",
+          "effnet._blocks.13._expand_conv.static_padding",
+          "effnet._blocks.13._project_conv.static_padding",
+          "effnet._blocks.13._se_expand.static_padding",
+          "effnet._blocks.13._se_reduce.static_padding",
+          "effnet._blocks.14._expand_conv.static_padding",
+          "effnet._blocks.14._project_conv.static_padding",
+          "effnet._blocks.14._se_expand.static_padding",
+          "effnet._blocks.14._se_reduce.static_padding",
+          "effnet._blocks.15._expand_conv.static_padding",
+          "effnet._blocks.15._project_conv.static_padding",
+          "effnet._blocks.15._se_expand.static_padding",
+          "effnet._blocks.15._se_reduce.static_padding",
+          "effnet._blocks.16._expand_conv.static_padding",
+          "effnet._blocks.16._project_conv.static_padding",
+          "effnet._blocks.16._se_expand.static_padding",
+          "effnet._blocks.16._se_reduce.static_padding",
+          "effnet._blocks.17._expand_conv.static_padding",
+          "effnet._blocks.17._project_conv.static_padding",
+          "effnet._blocks.17._se_expand.static_padding",
+          "effnet._blocks.17._se_reduce.static_padding",
+          "effnet._blocks.18._expand_conv.static_padding",
+          "effnet._blocks.18._project_conv.static_padding",
+          "effnet._blocks.18._se_expand.static_padding",
+          "effnet._blocks.18._se_reduce.static_padding",
+          "effnet._blocks.19._expand_conv.static_padding",
+          "effnet._blocks.19._project_conv.static_padding",
+          "effnet._blocks.19._se_expand.static_padding",
+          "effnet._blocks.19._se_reduce.static_padding",
+          "effnet._blocks.2._expand_conv.static_padding",
+          "effnet._blocks.2._project_conv.static_padding",
+          "effnet._blocks.2._se_expand.static_padding",
+          "effnet._blocks.2._se_reduce.static_padding",
+          "effnet._blocks.20._expand_conv.static_padding",
+          "effnet._blocks.20._project_conv.static_padding",
+          "effnet._blocks.20._se_expand.static_padding",
+          "effnet._blocks.20._se_reduce.static_padding",
+          "effnet._blocks.21._expand_conv.static_padding",
+          "effnet._blocks.21._project_conv.static_padding",
+          "effnet._blocks.21._se_expand.static_padding",
+          "effnet._blocks.21._se_reduce.static_padding",
+          "effnet._blocks.22._expand_conv.static_padding",
+          "effnet._blocks.22._project_conv.static_padding",
+          "effnet._blocks.22._se_expand.static_padding",
+          "effnet._blocks.22._se_reduce.static_padding",
+          "effnet._blocks.3._expand_conv.static_padding",
+          "effnet._blocks.3._project_conv.static_padding",
+          "effnet._blocks.3._se_expand.static_padding",
+          "effnet._blocks.3._se_reduce.static_padding",
+          "effnet._blocks.4._expand_conv.static_padding",
+          "effnet._blocks.4._project_conv.static_padding",
+          "effnet._blocks.4._se_expand.static_padding",
+          "effnet._blocks.4._se_reduce.static_padding",
+          "effnet._blocks.5._expand_conv.static_padding",
+          "effnet._blocks.5._project_conv.static_padding",
+          "effnet._blocks.5._se_expand.static_padding",
+          "effnet._blocks.5._se_reduce.static_padding",
+          "effnet._blocks.6._expand_conv.static_padding",
+          "effnet._blocks.6._project_conv.static_padding",
+          "effnet._blocks.6._se_expand.static_padding",
+          "effnet._blocks.6._se_reduce.static_padding",
+          "effnet._blocks.7._expand_conv.static_padding",
+          "effnet._blocks.7._project_conv.static_padding",
+          "effnet._blocks.7._se_expand.static_padding",
+          "effnet._blocks.7._se_reduce.static_padding",
+          "effnet._blocks.8._expand_conv.static_padding",
+          "effnet._blocks.8._project_conv.static_padding",
+          "effnet._blocks.8._se_expand.static_padding",
+          "effnet._blocks.8._se_reduce.static_padding",
+          "effnet._blocks.9._expand_conv.static_padding",
+          "effnet._blocks.9._project_conv.static_padding",
+          "effnet._blocks.9._se_expand.static_padding",
+          "effnet._blocks.9._se_reduce.static_padding",
+          "effnet._conv_head.static_padding",
+          "effnet._dropout",
+          "effnet._fc"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 13640766,
+        "trainable_params": 13640766,
+        "total_mult_adds": 190158576,
+        "summary": "=========================================================================================================\nLayer (type:depth-idx)                                  Output Shape              Param #\n=========================================================================================================\nEffNetAttention                                         [1, 527]                  --\n\u251c\u2500EfficientNet: 1-1                                     --                        --\n\u2502    \u2514\u2500Conv2dStaticSamePadding: 2-1                     [1, 32, 64, 512]          288\n\u2502    \u2502    \u2514\u2500ZeroPad2d: 3-1                              [1, 1, 130, 1026]         --\n\u2502    \u2514\u2500BatchNorm2d: 2-2                                 [1, 32, 64, 512]          64\n\u2502    \u2514\u2500MemoryEfficientSwish: 2-3                        [1, 32, 64, 512]          --\n\u2502    \u2514\u2500ModuleList: 2-4                                  --                        --\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-2                            [1, 16, 64, 512]          1,448\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-3                            [1, 16, 64, 512]          612\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-4                            [1, 24, 32, 256]          6,004\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-5                            [1, 24, 32, 256]          10,710\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-6                            [1, 24, 32, 256]          10,710\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-7                            [1, 48, 16, 128]          16,518\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-8                            [1, 48, 16, 128]          43,308\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-9                            [1, 48, 16, 128]          43,308\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-10                           [1, 88, 8, 64]            50,300\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-11                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-12                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-13                           [1, 88, 8, 64]            123,750\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-14                           [1, 120, 8, 64]           149,158\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-15                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-16                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-17                           [1, 120, 8, 64]           237,870\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-18                           [1, 208, 4, 32]           301,406\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-19                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-20                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-21                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-22                           [1, 208, 4, 32]           686,868\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-23                           [1, 352, 4, 32]           846,900\n\u2502    \u2502    \u2514\u2500MBConvBlock: 3-24                           [1, 352, 4, 32]           1,888,920\n\u2502    \u2514\u2500Conv2dStaticSamePadding: 2-5                     [1, 1408, 4, 32]          495,616\n\u2502    \u2502    \u2514\u2500Identity: 3-25                              [1, 352, 4, 32]           --\n\u2502    \u2514\u2500BatchNorm2d: 2-6                                 [1, 1408, 4, 32]          2,816\n\u2502    \u2514\u2500MemoryEfficientSwish: 2-7                        [1, 1408, 4, 32]          --\n\u251c\u2500AvgPool2d: 1-2                                        [1, 1408, 1, 32]          --\n\u251c\u2500MHeadAttention: 1-3                                   [1, 527]                  4\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-26                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-27                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-28                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-29                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-30                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-31                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-14                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-32                                [1, 527, 32, 1]           742,543\n\u2502    \u2514\u2500ModuleList: 2-15                                 --                        (recursive)\n\u2502    \u2502    \u2514\u2500Conv2d: 3-33                                [1, 527, 32, 1]           742,543\n=========================================================================================================\nTotal params: 13,640,766\nTrainable params: 13,640,766\nNon-trainable params: 0\nTotal mult-adds (M): 190.16\n=========================================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 205.72\nParams size (MB): 24.03\nEstimated Total Size (MB): 230.39\n========================================================================================================="
+      },
+      "flops": 1980337856,
+      "macs_estimated": 990168928.0,
+      "gflops": 1.980337856,
+      "gmacs_estimated": 0.990168928
+    }
+  },
+  "minimum_input": {
+    "status": "search_aborted_with_non_size_error",
+    "samples": null,
+    "seconds": null,
+    "sample_rate": 16000,
+    "attempt_count": 10,
+    "attempts_tail": [
+      {
+        "samples": 160000,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 80008,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 40012,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 20014,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 10015,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 5015,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 2515,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 1265,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 640,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 328,
+        "ok": false,
+        "classification": "unrelated_runtime_error",
+        "error": "choose a window size 400 that is [2, 328]"
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

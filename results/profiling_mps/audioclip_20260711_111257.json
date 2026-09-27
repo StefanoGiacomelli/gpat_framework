@@ -1,0 +1,506 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "audioclip",
+    "model_class": "models.audioclip.model.AudioCLIP",
+    "checkpoint_path": "models/audioclip/AudioCLIP-Full-Training.pt",
+    "model_configuration": {},
+    "module_sample_rate": 44100
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:12:39.859754+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 44100,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 441000,
+    "waveform_shape": [
+      1,
+      441000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 441000,
+      "waveform_shape": [
+        1,
+        441000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.3852147499565035,
+      0.4013146249926649,
+      0.38428116601426154,
+      0.38804191700182855,
+      0.3918533750111237,
+      0.3866819579852745,
+      0.3983038750011474,
+      0.3952628750121221,
+      0.3899422499816865,
+      0.3883890839642845,
+      0.388995666988194,
+      0.3835239579784684,
+      0.38156274997163564,
+      0.38513454201165587,
+      0.38825550000183284,
+      0.3940416660043411,
+      0.38836454099509865,
+      0.37929337500827387,
+      0.37626279098913074,
+      0.3859930000035092
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.37626279098913074,
+      "max": 0.4013146249926649,
+      "mean": 0.3880356832436519,
+      "std": 0.006083810294706217,
+      "median": 0.3881487085018307,
+      "skewness": 0.33970894868573775,
+      "kurtosis": 0.36503551856708993,
+      "iqr": 0.005498833226738498,
+      "p75": 0.3904200312390458,
+      "p90": 0.3955669750110246
+    }
+  },
+  "parameters": {
+    "total_parameters": 32644946,
+    "trainable_parameters": 32644946,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 32.644946,
+    "trainable_parameters_millions": 32.644946,
+    "parameter_memory_mb": 130.579784,
+    "bytes_by_dtype": {
+      "torch.float32": 130579784
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 1839.480832
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 1717.305344
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1717.305344
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 1718.43584
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 1717.305344
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.419456
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 1718.43584
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          1.1141119999999773,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.016384000000016385,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.05652479999999969,
+        "std": 0.24895707976097647
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        441000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 28804258112,
+        "unsupported_ops": {
+          "aten::sub": 2,
+          "aten::mul": 28,
+          "aten::div": 4,
+          "aten::add": 8,
+          "aten::rsub": 1,
+          "aten::repeat": 2,
+          "aten::t_": 1,
+          "aten::add_": 17,
+          "aten::pad": 1,
+          "aten::linspace": 1,
+          "aten::cos": 2,
+          "aten::sin": 3,
+          "aten::neg": 2,
+          "aten::sqrt": 1,
+          "aten::ones_like": 1,
+          "aten::where": 2,
+          "aten::pow": 10,
+          "aten::atan2": 1,
+          "aten::exp": 1,
+          "aten::log": 2,
+          "aten::log10": 1,
+          "aten::max_pool2d": 1,
+          "aten::clone": 5,
+          "aten::adaptive_max_pool2d": 5,
+          "aten::sigmoid": 6,
+          "aten::sum": 1
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 32644946,
+        "trainable_params": 32644946,
+        "total_mult_adds": 25345702095,
+        "summary": "===============================================================================================\nLayer (type:depth-idx)                        Output Shape              Param #\n===============================================================================================\nAudioCLIP                                     [1, 527]                  --\n\u251c\u2500ESResNeXtFBSP: 1-1                          [1, 1024]                 --\n\u2502    \u2514\u2500LinearFBSP: 2-1                        [1, 785, 1025, 2]         3,075\n\u2502    \u2514\u2500Conv2d: 2-2                            [1, 64, 171, 393]         9,408\n\u2502    \u2514\u2500BatchNorm2d: 2-3                       [1, 64, 171, 393]         128\n\u2502    \u2514\u2500ReLU: 2-4                              [1, 64, 171, 393]         --\n\u2502    \u2514\u2500MaxPool2d: 2-5                         [1, 64, 86, 197]          --\n\u2502    \u2514\u2500Sequential: 2-6                        [1, 256, 86, 197]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-1                   [1, 256, 86, 197]         63,488\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-2                   [1, 256, 86, 197]         71,168\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-3                   [1, 256, 86, 197]         71,168\n\u2502    \u2514\u2500Attention2d: 2-7                       [1, 256, 86, 197]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-4                       [1, 64, 86, 197]          256\n\u2502    \u2502    \u2514\u2500Conv2d: 3-5                       [1, 256, 86, 197]         16,640\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-6                  [1, 256, 86, 197]         512\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-7                      [1, 256, 86, 197]         --\n\u2502    \u2514\u2500Sequential: 2-8                        [1, 512, 43, 99]          --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-8                   [1, 512, 43, 99]          349,184\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-9                   [1, 512, 43, 99]          282,624\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-10                  [1, 512, 43, 99]          282,624\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-11                  [1, 512, 43, 99]          282,624\n\u2502    \u2514\u2500Attention2d: 2-9                       [1, 512, 43, 99]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-12                      [1, 256, 43, 99]          1,536\n\u2502    \u2502    \u2514\u2500Conv2d: 3-13                      [1, 512, 43, 99]          131,584\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-14                 [1, 512, 43, 99]          1,024\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-15                     [1, 512, 43, 99]          --\n\u2502    \u2514\u2500Sequential: 2-10                       [1, 1024, 22, 50]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-16                  [1, 1024, 22, 50]         1,390,592\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-17                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-18                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-19                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-20                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-21                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2514\u2500Attention2d: 2-11                      [1, 1024, 22, 50]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-22                      [1, 512, 22, 50]          2,048\n\u2502    \u2502    \u2514\u2500Conv2d: 3-23                      [1, 1024, 22, 50]         525,312\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-24                 [1, 1024, 22, 50]         2,048\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-25                     [1, 1024, 22, 50]         --\n\u2502    \u2514\u2500Sequential: 2-12                       [1, 2048, 11, 25]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-26                  [1, 2048, 11, 25]         5,550,080\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-27                  [1, 2048, 11, 25]         4,497,408\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-28                  [1, 2048, 11, 25]         4,497,408\n\u2502    \u2514\u2500Attention2d: 2-13                      [1, 2048, 11, 25]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-29                      [1, 1024, 11, 25]         6,144\n\u2502    \u2502    \u2514\u2500Conv2d: 3-30                      [1, 2048, 11, 25]         2,099,200\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-31                 [1, 2048, 11, 25]         4,096\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-32                     [1, 2048, 11, 25]         --\n\u2502    \u2514\u2500AdaptiveAvgPool2d: 2-14                [1, 2048, 1, 1]           --\n\u2502    \u2514\u2500Attention2d: 2-15                      [1, 2048, 1, 1]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-33                      [1, 2048, 1, 1]           32,768\n\u2502    \u2502    \u2514\u2500Conv2d: 3-34                      [1, 2048, 1, 1]           4,196,352\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-35                 [1, 2048, 1, 1]           4,096\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-36                     [1, 2048, 1, 1]           --\n\u2502    \u2514\u2500Linear: 2-16                           [1, 1024]                 2,098,176\n\u251c\u2500Linear: 1-2                                 [1, 527]                  540,175\n===============================================================================================\nTotal params: 32,644,946\nTrainable params: 32,644,946\nNon-trainable params: 0\nTotal mult-adds (G): 25.35\n===============================================================================================\nInput size (MB): 1.76\nForward/backward pass size (MB): 1425.53\nParams size (MB): 130.58\nEstimated Total Size (MB): 1557.88\n==============================================================================================="
+      },
+      "flops": 28804258112,
+      "macs_estimated": 14402129056.0,
+      "gflops": 28.804258112,
+      "gmacs_estimated": 14.402129056
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        441000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 28804258112,
+        "unsupported_ops": {
+          "aten::sub": 2,
+          "aten::mul": 28,
+          "aten::div": 4,
+          "aten::add": 8,
+          "aten::rsub": 1,
+          "aten::repeat": 2,
+          "aten::t_": 1,
+          "aten::add_": 17,
+          "aten::pad": 1,
+          "aten::linspace": 1,
+          "aten::cos": 2,
+          "aten::sin": 3,
+          "aten::neg": 2,
+          "aten::sqrt": 1,
+          "aten::ones_like": 1,
+          "aten::where": 2,
+          "aten::pow": 10,
+          "aten::atan2": 1,
+          "aten::exp": 1,
+          "aten::log": 2,
+          "aten::log10": 1,
+          "aten::max_pool2d": 1,
+          "aten::clone": 5,
+          "aten::adaptive_max_pool2d": 5,
+          "aten::sigmoid": 6,
+          "aten::sum": 1
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 32644946,
+        "trainable_params": 32644946,
+        "total_mult_adds": 25345702095,
+        "summary": "===============================================================================================\nLayer (type:depth-idx)                        Output Shape              Param #\n===============================================================================================\nAudioCLIP                                     [1, 527]                  --\n\u251c\u2500ESResNeXtFBSP: 1-1                          [1, 1024]                 --\n\u2502    \u2514\u2500LinearFBSP: 2-1                        [1, 785, 1025, 2]         3,075\n\u2502    \u2514\u2500Conv2d: 2-2                            [1, 64, 171, 393]         9,408\n\u2502    \u2514\u2500BatchNorm2d: 2-3                       [1, 64, 171, 393]         128\n\u2502    \u2514\u2500ReLU: 2-4                              [1, 64, 171, 393]         --\n\u2502    \u2514\u2500MaxPool2d: 2-5                         [1, 64, 86, 197]          --\n\u2502    \u2514\u2500Sequential: 2-6                        [1, 256, 86, 197]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-1                   [1, 256, 86, 197]         63,488\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-2                   [1, 256, 86, 197]         71,168\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-3                   [1, 256, 86, 197]         71,168\n\u2502    \u2514\u2500Attention2d: 2-7                       [1, 256, 86, 197]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-4                       [1, 64, 86, 197]          256\n\u2502    \u2502    \u2514\u2500Conv2d: 3-5                       [1, 256, 86, 197]         16,640\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-6                  [1, 256, 86, 197]         512\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-7                      [1, 256, 86, 197]         --\n\u2502    \u2514\u2500Sequential: 2-8                        [1, 512, 43, 99]          --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-8                   [1, 512, 43, 99]          349,184\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-9                   [1, 512, 43, 99]          282,624\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-10                  [1, 512, 43, 99]          282,624\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-11                  [1, 512, 43, 99]          282,624\n\u2502    \u2514\u2500Attention2d: 2-9                       [1, 512, 43, 99]          --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-12                      [1, 256, 43, 99]          1,536\n\u2502    \u2502    \u2514\u2500Conv2d: 3-13                      [1, 512, 43, 99]          131,584\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-14                 [1, 512, 43, 99]          1,024\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-15                     [1, 512, 43, 99]          --\n\u2502    \u2514\u2500Sequential: 2-10                       [1, 1024, 22, 50]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-16                  [1, 1024, 22, 50]         1,390,592\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-17                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-18                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-19                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-20                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-21                  [1, 1024, 22, 50]         1,126,400\n\u2502    \u2514\u2500Attention2d: 2-11                      [1, 1024, 22, 50]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-22                      [1, 512, 22, 50]          2,048\n\u2502    \u2502    \u2514\u2500Conv2d: 3-23                      [1, 1024, 22, 50]         525,312\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-24                 [1, 1024, 22, 50]         2,048\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-25                     [1, 1024, 22, 50]         --\n\u2502    \u2514\u2500Sequential: 2-12                       [1, 2048, 11, 25]         --\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-26                  [1, 2048, 11, 25]         5,550,080\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-27                  [1, 2048, 11, 25]         4,497,408\n\u2502    \u2502    \u2514\u2500Bottleneck: 3-28                  [1, 2048, 11, 25]         4,497,408\n\u2502    \u2514\u2500Attention2d: 2-13                      [1, 2048, 11, 25]         --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-29                      [1, 1024, 11, 25]         6,144\n\u2502    \u2502    \u2514\u2500Conv2d: 3-30                      [1, 2048, 11, 25]         2,099,200\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-31                 [1, 2048, 11, 25]         4,096\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-32                     [1, 2048, 11, 25]         --\n\u2502    \u2514\u2500AdaptiveAvgPool2d: 2-14                [1, 2048, 1, 1]           --\n\u2502    \u2514\u2500Attention2d: 2-15                      [1, 2048, 1, 1]           --\n\u2502    \u2502    \u2514\u2500Conv2d: 3-33                      [1, 2048, 1, 1]           32,768\n\u2502    \u2502    \u2514\u2500Conv2d: 3-34                      [1, 2048, 1, 1]           4,196,352\n\u2502    \u2502    \u2514\u2500BatchNorm2d: 3-35                 [1, 2048, 1, 1]           4,096\n\u2502    \u2502    \u2514\u2500Sigmoid: 3-36                     [1, 2048, 1, 1]           --\n\u2502    \u2514\u2500Linear: 2-16                           [1, 1024]                 2,098,176\n\u251c\u2500Linear: 1-2                                 [1, 527]                  540,175\n===============================================================================================\nTotal params: 32,644,946\nTrainable params: 32,644,946\nNon-trainable params: 0\nTotal mult-adds (G): 25.35\n===============================================================================================\nInput size (MB): 1.76\nForward/backward pass size (MB): 1425.53\nParams size (MB): 130.58\nEstimated Total Size (MB): 1557.88\n==============================================================================================="
+      },
+      "flops": 28804258112,
+      "macs_estimated": 14402129056.0,
+      "gflops": 28.804258112,
+      "gmacs_estimated": 14.402129056
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 44,
+    "seconds": 0.000997732426303855,
+    "sample_rate": 44100,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 20,
+    "attempts_tail": [
+      {
+        "samples": 1766,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 905,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 474,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 259,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 151,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 97,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 70,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 57,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 50,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 47,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 45,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 44,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

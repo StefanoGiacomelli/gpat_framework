@@ -1,0 +1,1793 @@
+{
+  "compatibility": {
+    "invalid_or_not_applicable_metrics": [
+      "native non-AudioSet hierarchy metrics without an exact local hierarchy implementation"
+    ],
+    "mapping_required": "FSD50K labels are aligned through exact vocabulary AudioSet MIDs plus projection aggregation for 8 missing MIDs",
+    "model_output_compatibility": "FSD50K labels are aligned through exact vocabulary AudioSet MIDs plus projection aggregation for 8 missing MIDs",
+    "native_hierarchy_available": true,
+    "ontology_hierarchy_source": "training/audioset_graph_distance.py and training/HLP_lookup_table.pt",
+    "valid_metrics": [
+      "class_wise_ap",
+      "mAP",
+      "lwlrap",
+      "micro_averaged_accuracy",
+      "micro_f1",
+      "macro_f1",
+      "TOP-10 class-specific F1 for exact mapped and projected aggregate classes",
+      "OmAP when using full AudioSet 527 target space",
+      "AudioSet HLP post-processed metrics when asset shape matches"
+    ]
+  },
+  "dataset_information": {
+    "audio_root": "/Users/stefano/Documents/gpat_framework/datasets/FSD50K_data/FSD50K.eval_audio",
+    "class_frequency_distribution": {
+      "Accelerating_and_revving_and_vroom": 114,
+      "Accordion": 50,
+      "Acoustic_guitar": 134,
+      "Aircraft": 88,
+      "Alarm": 584,
+      "Animal": 1082,
+      "Applause": 150,
+      "Bark": 122,
+      "Bass_drum": 119,
+      "Bass_guitar": 78,
+      "Bathtub_(filling_or_washing)": 55,
+      "Bell": 386,
+      "Bicycle": 100,
+      "Bicycle_bell": 56,
+      "Bird": 540,
+      "Bird_vocalization_and_bird_call_and_bird_song": 459,
+      "Boat_and_Water_vehicle": 33,
+      "Boiling": 37,
+      "Boom": 37,
+      "Bowed_string_instrument": 140,
+      "Brass_instrument": 86,
+      "Breathing": 227,
+      "Burping_and_eructation": 92,
+      "Bus": 62,
+      "Buzz": 76,
+      "Camera": 76,
+      "Car": 326,
+      "Car_passing_by": 106,
+      "Cat": 132,
+      "Chatter": 387,
+      "Cheering": 109,
+      "Chewing_and_mastication": 75,
+      "Chicken_and_rooster": 35,
+      "Child_speech_and_kid_speaking": 97,
+      "Chime": 102,
+      "Chink_and_clink": 168,
+      "Chirp_and_tweet": 354,
+      "Chuckle_and_chortle": 52,
+      "Church_bell": 60,
+      "Clapping": 188,
+      "Clock": 97,
+      "Coin_(dropping)": 92,
+      "Computer_keyboard": 93,
+      "Conversation": 61,
+      "Cough": 106,
+      "Cowbell": 63,
+      "Crack": 69,
+      "Crackle": 107,
+      "Crash_cymbal": 71,
+      "Cricket": 100,
+      "Crow": 36,
+      "Crowd": 153,
+      "Crumpling_and_crinkling": 90,
+      "Crushing": 86,
+      "Crying_and_sobbing": 42,
+      "Cupboard_open_or_close": 55,
+      "Cutlery_and_silverware": 126,
+      "Cymbal": 234,
+      "Dishes_and_pots_and_pans": 149,
+      "Dog": 178,
+      "Domestic_animals_and_pets": 311,
+      "Domestic_sounds_and_home_sounds": 1947,
+      "Door": 466,
+      "Doorbell": 37,
+      "Drawer_open_or_close": 69,
+      "Drill": 42,
+      "Drip": 99,
+      "Drum": 310,
+      "Drum_kit": 60,
+      "Electric_guitar": 181,
+      "Engine": 554,
+      "Engine_starting": 76,
+      "Explosion": 266,
+      "Fart": 97,
+      "Female_singing": 70,
+      "Female_speech_and_woman_speaking": 247,
+      "Fill_(with_liquid)": 58,
+      "Finger_snapping": 67,
+      "Fire": 124,
+      "Fireworks": 67,
+      "Fixed-wing_aircraft_and_airplane": 45,
+      "Fowl": 57,
+      "Frog": 38,
+      "Frying_(food)": 57,
+      "Gasp": 52,
+      "Giggle": 84,
+      "Glass": 267,
+      "Glockenspiel": 87,
+      "Gong": 72,
+      "Growling": 51,
+      "Guitar": 411,
+      "Gull_and_seagull": 32,
+      "Gunshot_and_gunfire": 134,
+      "Gurgling": 101,
+      "Hammer": 69,
+      "Hands": 297,
+      "Harmonica": 58,
+      "Harp": 57,
+      "Hi-hat": 146,
+      "Hiss": 125,
+      "Human_group_actions": 631,
+      "Human_voice": 1633,
+      "Idling": 106,
+      "Insect": 215,
+      "Keyboard_(musical)": 376,
+      "Keys_jangling": 82,
+      "Knock": 103,
+      "Laughter": 253,
+      "Liquid": 476,
+      "Livestock_and_farm_animals_and_working_animals": 120,
+      "Male_singing": 70,
+      "Male_speech_and_man_speaking": 467,
+      "Mallet_percussion": 140,
+      "Marimba_and_xylophone": 39,
+      "Mechanical_fan": 55,
+      "Mechanisms": 461,
+      "Meow": 78,
+      "Microwave_oven": 66,
+      "Motor_vehicle_(road)": 587,
+      "Motorcycle": 80,
+      "Music": 1972,
+      "Musical_instrument": 1940,
+      "Ocean": 93,
+      "Organ": 35,
+      "Packing_tape_and_duct_tape": 60,
+      "Percussion": 825,
+      "Piano": 76,
+      "Plucked_string_instrument": 434,
+      "Pour": 169,
+      "Power_tool": 43,
+      "Printer": 63,
+      "Purr": 60,
+      "Race_car_and_auto_racing": 51,
+      "Rail_transport": 199,
+      "Rain": 208,
+      "Raindrop": 75,
+      "Ratchet_and_pawl": 54,
+      "Rattle": 127,
+      "Rattle_(instrument)": 64,
+      "Respiratory_sounds": 380,
+      "Ringtone": 72,
+      "Run": 91,
+      "Sawing": 55,
+      "Scissors": 59,
+      "Scratching_(performance_technique)": 81,
+      "Screaming": 123,
+      "Screech": 68,
+      "Shatter": 96,
+      "Shout": 177,
+      "Sigh": 61,
+      "Singing": 194,
+      "Sink_(filling_or_washing)": 115,
+      "Siren": 55,
+      "Skateboard": 52,
+      "Slam": 201,
+      "Sliding_door": 99,
+      "Snare_drum": 145,
+      "Sneeze": 61,
+      "Speech": 785,
+      "Speech_synthesizer": 61,
+      "Splash_and_splatter": 144,
+      "Squeak": 217,
+      "Stream": 103,
+      "Strum": 57,
+      "Subway_and_metro_and_underground": 82,
+      "Tabla": 45,
+      "Tambourine": 71,
+      "Tap": 136,
+      "Tearing": 110,
+      "Telephone": 165,
+      "Thump_and_thud": 171,
+      "Thunder": 128,
+      "Thunderstorm": 132,
+      "Tick": 57,
+      "Tick-tock": 74,
+      "Toilet_flush": 73,
+      "Tools": 216,
+      "Traffic_noise_and_roadway_noise": 127,
+      "Train": 111,
+      "Trickle_and_dribble": 154,
+      "Truck": 44,
+      "Trumpet": 56,
+      "Typewriter": 51,
+      "Typing": 146,
+      "Vehicle": 1030,
+      "Vehicle_horn_and_car_horn_and_honking": 68,
+      "Walk_and_footsteps": 203,
+      "Water": 565,
+      "Water_tap_and_faucet": 178,
+      "Waves_and_surf": 78,
+      "Whispering": 75,
+      "Whoosh_and_swoosh_and_swish": 100,
+      "Wild_animals": 751,
+      "Wind": 134,
+      "Wind_chime": 53,
+      "Wind_instrument_and_woodwind_instrument": 105,
+      "Wood": 147,
+      "Writing": 88,
+      "Yell": 60,
+      "Zipper_(clothing)": 104
+    },
+    "evaluation_target_class_count": 527,
+    "failed_samples": 0,
+    "metadata_path": "/Users/stefano/Documents/gpat_framework/datasets/FSD50K_meta/FSD50K.ground_truth/eval.csv",
+    "native_class_count": 200,
+    "native_label_space": "FSD50K vocabulary labels with AudioSet MID references",
+    "skipped_samples": 0,
+    "split": "eval",
+    "successfully_evaluated_samples": 10231,
+    "total_metadata_samples": 10231
+  },
+  "environment": {
+    "effective_accelerator": "mps",
+    "fallback_reason": null,
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "precision": "32-true",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_lightning_version": "2.6.5",
+    "pytorch_version": "2.13.0",
+    "requested_accelerator": "mps"
+  },
+  "evaluation_configuration": {
+    "batch_size": 8,
+    "limit_batches": null,
+    "mapping_strategy": "FSD50K labels are aligned through exact vocabulary AudioSet MIDs plus projection aggregation for 8 missing MIDs",
+    "number_of_workers": 4,
+    "post_processing": "none by default",
+    "preprocessing": "mono downmix, resample to model sample rate, pad/crop to configured duration",
+    "seed": 42,
+    "threshold_values": {
+      "default_binary_threshold": 0.5
+    },
+    "top10_f1_selection_policy": "native evaluation-split positive-count ranking from complete metadata"
+  },
+  "mapping_and_taxonomy_information": {
+    "evaluation_label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+    "hierarchy_source": "training/audioset_graph_distance.py and training/HLP_lookup_table.pt",
+    "mapping_coverage_statistics": {
+      "ambiguous_mappings": 0,
+      "broader_mappings": 0,
+      "exact_mappings": 192,
+      "mapped_classes": 200,
+      "mapping_mechanism": "FSD50K exact MID plus evaluation/mappings/fsd50k_to_audioset_projection.json",
+      "narrower_mappings": 0,
+      "projection_mapping": {
+        "mappings": {
+          "Crash_cymbal": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 171,
+                "label": "Cymbal",
+                "mid": "/m/01qbl"
+              }
+            ],
+            "relation": "ancestor_projection",
+            "salt_node": "cymbal",
+            "source_mid": "/m/0bm0k"
+          },
+          "Domestic_sounds_and_home_sounds": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 354,
+                "label": "Door",
+                "mid": "/m/02dgv"
+              },
+              {
+                "index": 355,
+                "label": "Doorbell",
+                "mid": "/m/03wwcy"
+              },
+              {
+                "index": 356,
+                "label": "Ding-dong",
+                "mid": "/m/07r67yg"
+              },
+              {
+                "index": 357,
+                "label": "Sliding door",
+                "mid": "/m/02y_763"
+              },
+              {
+                "index": 358,
+                "label": "Slam",
+                "mid": "/m/07rjzl8"
+              },
+              {
+                "index": 362,
+                "label": "Cupboard open or close",
+                "mid": "/m/0642b4"
+              },
+              {
+                "index": 363,
+                "label": "Drawer open or close",
+                "mid": "/m/0fqfqc"
+              },
+              {
+                "index": 364,
+                "label": "Dishes, pots, and pans",
+                "mid": "/m/04brg2"
+              },
+              {
+                "index": 365,
+                "label": "Cutlery, silverware",
+                "mid": "/m/023pjk"
+              },
+              {
+                "index": 366,
+                "label": "Chopping (food)",
+                "mid": "/m/07pn_8q"
+              },
+              {
+                "index": 367,
+                "label": "Frying (food)",
+                "mid": "/m/0dxrf"
+              },
+              {
+                "index": 368,
+                "label": "Microwave oven",
+                "mid": "/m/0fx9l"
+              },
+              {
+                "index": 369,
+                "label": "Blender",
+                "mid": "/m/02pjr4"
+              },
+              {
+                "index": 370,
+                "label": "Water tap, faucet",
+                "mid": "/m/02jz0l"
+              },
+              {
+                "index": 371,
+                "label": "Sink (filling or washing)",
+                "mid": "/m/0130jx"
+              },
+              {
+                "index": 372,
+                "label": "Bathtub (filling or washing)",
+                "mid": "/m/03dnzn"
+              },
+              {
+                "index": 373,
+                "label": "Hair dryer",
+                "mid": "/m/03wvsk"
+              },
+              {
+                "index": 374,
+                "label": "Toilet flush",
+                "mid": "/m/01jt3m"
+              },
+              {
+                "index": 375,
+                "label": "Toothbrush",
+                "mid": "/m/012xff"
+              },
+              {
+                "index": 376,
+                "label": "Electric toothbrush",
+                "mid": "/m/04fgwm"
+              },
+              {
+                "index": 377,
+                "label": "Vacuum cleaner",
+                "mid": "/m/0d31p"
+              },
+              {
+                "index": 378,
+                "label": "Zipper (clothing)",
+                "mid": "/m/01s0vc"
+              },
+              {
+                "index": 379,
+                "label": "Keys jangling",
+                "mid": "/m/03v3yw"
+              },
+              {
+                "index": 380,
+                "label": "Coin (dropping)",
+                "mid": "/m/0242l"
+              },
+              {
+                "index": 381,
+                "label": "Scissors",
+                "mid": "/m/01lsmm"
+              },
+              {
+                "index": 382,
+                "label": "Electric shaver, electric razor",
+                "mid": "/m/02g901"
+              },
+              {
+                "index": 383,
+                "label": "Shuffling cards",
+                "mid": "/m/05rj2"
+              },
+              {
+                "index": 384,
+                "label": "Typing",
+                "mid": "/m/0316dw"
+              },
+              {
+                "index": 385,
+                "label": "Typewriter",
+                "mid": "/m/0c2wf"
+              },
+              {
+                "index": 386,
+                "label": "Computer keyboard",
+                "mid": "/m/01m2v"
+              },
+              {
+                "index": 387,
+                "label": "Writing",
+                "mid": "/m/081rb"
+              },
+              {
+                "index": 395,
+                "label": "Alarm clock",
+                "mid": "/m/046dlr"
+              },
+              {
+                "index": 524,
+                "label": "Television",
+                "mid": "/m/07c52"
+              },
+              {
+                "index": 525,
+                "label": "Radio",
+                "mid": "/m/06bz3"
+              }
+            ],
+            "relation": "descendant_aggregation",
+            "salt_node": "domestic_sounds",
+            "source_mid": "/t/dd00071"
+          },
+          "Gull_and_seagull": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 111,
+                "label": "Bird",
+                "mid": "/m/015p6"
+              }
+            ],
+            "relation": "ancestor_projection",
+            "salt_node": "bird",
+            "source_mid": "/m/01dwxx"
+          },
+          "Human_group_actions": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 66,
+                "label": "Cheering",
+                "mid": "/m/053hz1"
+              },
+              {
+                "index": 67,
+                "label": "Applause",
+                "mid": "/m/028ght"
+              },
+              {
+                "index": 68,
+                "label": "Chatter",
+                "mid": "/m/07rkbfh"
+              },
+              {
+                "index": 69,
+                "label": "Crowd",
+                "mid": "/m/03qtwd"
+              },
+              {
+                "index": 70,
+                "label": "Hubbub, speech noise, speech babble",
+                "mid": "/m/07qfr4h"
+              }
+            ],
+            "relation": "descendant_aggregation",
+            "salt_node": "human_group_actions",
+            "source_mid": "/t/dd00012"
+          },
+          "Human_voice": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 0,
+                "label": "Speech",
+                "mid": "/m/09x0r"
+              },
+              {
+                "index": 1,
+                "label": "Male speech, man speaking",
+                "mid": "/m/05zppz"
+              },
+              {
+                "index": 2,
+                "label": "Female speech, woman speaking",
+                "mid": "/m/02zsn"
+              },
+              {
+                "index": 3,
+                "label": "Child speech, kid speaking",
+                "mid": "/m/0ytgt"
+              },
+              {
+                "index": 4,
+                "label": "Conversation",
+                "mid": "/m/01h8n0"
+              },
+              {
+                "index": 5,
+                "label": "Narration, monologue",
+                "mid": "/m/02qldy"
+              },
+              {
+                "index": 6,
+                "label": "Babbling",
+                "mid": "/m/0261r1"
+              },
+              {
+                "index": 7,
+                "label": "Speech synthesizer",
+                "mid": "/m/0brhx"
+              },
+              {
+                "index": 8,
+                "label": "Shout",
+                "mid": "/m/07p6fty"
+              },
+              {
+                "index": 9,
+                "label": "Bellow",
+                "mid": "/m/07q4ntr"
+              },
+              {
+                "index": 10,
+                "label": "Whoop",
+                "mid": "/m/07rwj3x"
+              },
+              {
+                "index": 11,
+                "label": "Yell",
+                "mid": "/m/07sr1lc"
+              },
+              {
+                "index": 12,
+                "label": "Battle cry",
+                "mid": "/m/04gy_2"
+              },
+              {
+                "index": 13,
+                "label": "Children shouting",
+                "mid": "/t/dd00135"
+              },
+              {
+                "index": 14,
+                "label": "Screaming",
+                "mid": "/m/03qc9zr"
+              },
+              {
+                "index": 15,
+                "label": "Whispering",
+                "mid": "/m/02rtxlg"
+              },
+              {
+                "index": 16,
+                "label": "Laughter",
+                "mid": "/m/01j3sz"
+              },
+              {
+                "index": 17,
+                "label": "Baby laughter",
+                "mid": "/t/dd00001"
+              },
+              {
+                "index": 18,
+                "label": "Giggle",
+                "mid": "/m/07r660_"
+              },
+              {
+                "index": 20,
+                "label": "Belly laugh",
+                "mid": "/m/07sq110"
+              },
+              {
+                "index": 21,
+                "label": "Chuckle, chortle",
+                "mid": "/m/07rgt08"
+              },
+              {
+                "index": 22,
+                "label": "Crying, sobbing",
+                "mid": "/m/0463cq4"
+              },
+              {
+                "index": 23,
+                "label": "Baby cry, infant cry",
+                "mid": "/t/dd00002"
+              },
+              {
+                "index": 24,
+                "label": "Whimper",
+                "mid": "/m/07qz6j3"
+              },
+              {
+                "index": 25,
+                "label": "Wail, moan",
+                "mid": "/m/07qw_06"
+              },
+              {
+                "index": 26,
+                "label": "Sigh",
+                "mid": "/m/07plz5l"
+              },
+              {
+                "index": 27,
+                "label": "Singing",
+                "mid": "/m/015lz1"
+              },
+              {
+                "index": 28,
+                "label": "Choir",
+                "mid": "/m/0l14jd"
+              },
+              {
+                "index": 29,
+                "label": "Yodeling",
+                "mid": "/m/01swy6"
+              },
+              {
+                "index": 30,
+                "label": "Chant",
+                "mid": "/m/02bk07"
+              },
+              {
+                "index": 31,
+                "label": "Mantra",
+                "mid": "/m/01c194"
+              },
+              {
+                "index": 32,
+                "label": "Male singing",
+                "mid": "/t/dd00003"
+              },
+              {
+                "index": 33,
+                "label": "Female singing",
+                "mid": "/t/dd00004"
+              },
+              {
+                "index": 34,
+                "label": "Child singing",
+                "mid": "/t/dd00005"
+              },
+              {
+                "index": 35,
+                "label": "Synthetic singing",
+                "mid": "/t/dd00006"
+              },
+              {
+                "index": 36,
+                "label": "Rapping",
+                "mid": "/m/06bxc"
+              },
+              {
+                "index": 37,
+                "label": "Humming",
+                "mid": "/m/02fxyj"
+              },
+              {
+                "index": 38,
+                "label": "Groan",
+                "mid": "/m/07s2xch"
+              },
+              {
+                "index": 39,
+                "label": "Grunt",
+                "mid": "/m/07r4k75"
+              },
+              {
+                "index": 68,
+                "label": "Chatter",
+                "mid": "/m/07rkbfh"
+              },
+              {
+                "index": 71,
+                "label": "Children playing",
+                "mid": "/t/dd00013"
+              },
+              {
+                "index": 254,
+                "label": "Vocal music",
+                "mid": "/m/0y4f8"
+              },
+              {
+                "index": 255,
+                "label": "A capella",
+                "mid": "/m/0z9c"
+              }
+            ],
+            "relation": "descendant_aggregation",
+            "salt_node": "human_voice",
+            "source_mid": "/m/09l8g"
+          },
+          "Packing_tape_and_duct_tape": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 378,
+                "label": "Zipper (clothing)",
+                "mid": "/m/01s0vc"
+              },
+              {
+                "index": 381,
+                "label": "Scissors",
+                "mid": "/m/01lsmm"
+              }
+            ],
+            "relation": "broad_context_aggregation",
+            "salt_node": "duct_tape",
+            "source_mid": "/m/05mxj0q"
+          },
+          "Respiratory_sounds": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 26,
+                "label": "Sigh",
+                "mid": "/m/07plz5l"
+              },
+              {
+                "index": 41,
+                "label": "Breathing",
+                "mid": "/m/0lyf6"
+              },
+              {
+                "index": 42,
+                "label": "Wheeze",
+                "mid": "/m/07mzm6"
+              },
+              {
+                "index": 43,
+                "label": "Snoring",
+                "mid": "/m/01d3sd"
+              },
+              {
+                "index": 44,
+                "label": "Gasp",
+                "mid": "/m/07s0dtb"
+              },
+              {
+                "index": 45,
+                "label": "Pant",
+                "mid": "/m/07pyy8b"
+              },
+              {
+                "index": 46,
+                "label": "Snort",
+                "mid": "/m/07q0yl5"
+              }
+            ],
+            "relation": "descendant_aggregation",
+            "salt_node": "breathing",
+            "source_mid": "/m/09hlz4"
+          },
+          "Screech": {
+            "aggregation": "max",
+            "audioset_targets": [
+              {
+                "index": 361,
+                "label": "Squeak",
+                "mid": "/m/07q6cd_"
+              },
+              {
+                "index": 474,
+                "label": "Scratch",
+                "mid": "/m/07qb_dv"
+              },
+              {
+                "index": 475,
+                "label": "Scrape",
+                "mid": "/m/07qv4k0"
+              },
+              {
+                "index": 484,
+                "label": "Clang",
+                "mid": "/m/07rv4dm"
+              },
+              {
+                "index": 485,
+                "label": "Squeal",
+                "mid": "/m/07s02z0"
+              },
+              {
+                "index": 486,
+                "label": "Creak",
+                "mid": "/m/07qh7jl"
+              }
+            ],
+            "relation": "curated_source_ambiguous_aggregation",
+            "salt_node": "source-ambiguous_sounds",
+            "source_mid": "/m/07q8k13"
+          }
+        },
+        "metadata": {
+          "aggregation": "max over listed AudioSet model-output probabilities when a source label maps to multiple AudioSet labels",
+          "audioset_label_source": "datasets/AudioSet_meta/class_labels_indices.csv",
+          "description": "Derived FSD50K-to-AudioSet projection for FSD50K labels whose MIDs are absent from datasets/AudioSet_meta/class_labels_indices.csv.",
+          "source_mapping": "taxonomy/salt/py-salt/assets/salt_event_mapping.tsv"
+        }
+      },
+      "projection_mappings": 8,
+      "total_dataset_classes": 200,
+      "unmapped_classes": 0,
+      "unmapped_native_label_ids": []
+    },
+    "mapping_mechanism": "FSD50K exact MID plus evaluation/mappings/fsd50k_to_audioset_projection.json",
+    "ontology_source": "training/audioset_graph_distance.py and training/HLP_lookup_table.pt",
+    "source_label_space": "FSD50K vocabulary labels with AudioSet MID references"
+  },
+  "metrics": {
+    "hierarchy_aware": {
+      "hierarchical_multilabel_prf": {
+        "configuration": {
+          "averaging": "sample_macro",
+          "lookup_table": "training/HLP_lookup_table.pt",
+          "threshold": 0.5
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping with AudioSet HLP closure",
+        "status": "computed",
+        "value": {
+          "f1": 0.06681447476148605,
+          "precision": 0.08698909729719162,
+          "recall": 0.07890136539936066
+        }
+      },
+      "hlp_expanded_map": {
+        "configuration": {
+          "ignore_nan": true,
+          "lookup_table": "training/HLP_lookup_table.pt",
+          "no_positive": "nan"
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping with soft AudioSet HLP prediction propagation and target closure",
+        "status": "computed",
+        "value": 0.08622380906777184
+      }
+    },
+    "ontology_aware": {
+      "omap": {
+        "configuration": {
+          "graph_distance": "training/audioset_graph_distance.py"
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": {
+          "average": 0.562869542433238,
+          "by_coarse_level": {
+            "0": 0.10985978167242559,
+            "1": 0.11369940057845146,
+            "10": 0.5213907195804494,
+            "11": 0.6607208827353533,
+            "12": 0.7300722838708474,
+            "13": 0.8202543176316395,
+            "14": 0.9081172417730052,
+            "15": 0.9697495567848177,
+            "16": 0.9918920442665718,
+            "17": 0.9918176927530543,
+            "18": 0.9933856086251402,
+            "19": 1.0,
+            "2": 0.11635866199022252,
+            "20": 1.0,
+            "21": 1.0,
+            "3": 0.1267363050793405,
+            "4": 0.14693345453519122,
+            "5": 0.1717978774029553,
+            "6": 0.19298132044231212,
+            "7": 0.22126339642772924,
+            "8": 0.2606193671183257,
+            "9": 0.33548002026340373
+          }
+        }
+      }
+    },
+    "standard": {
+      "class_wise_ap": {
+        "configuration": {
+          "no_positive": "nan"
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": [
+          0.17622929813417135,
+          0.13641418640922176,
+          0.19597248182095517,
+          0.1654110758353754,
+          0.21169001522388917,
+          0.17565292055931217,
+          0.15664976065004999,
+          0.14001163183668575,
+          0.1815978231610548,
+          0.19710129167230334,
+          0.16238799827981673,
+          0.15992621935925866,
+          0.1575921021383838,
+          0.16038876172789188,
+          0.13992385695539336,
+          0.1758909739281952,
+          0.42724383805041843,
+          0.19150734661635024,
+          0.19481764911753918,
+          null,
+          0.15892416424816805,
+          0.13912292705966722,
+          0.19587541065697522,
+          0.18568252041217645,
+          0.16086948749178148,
+          0.1761723496795471,
+          0.21233984121790767,
+          0.19004235926834015,
+          0.1817233252901187,
+          0.1799060249706833,
+          0.14879283865259718,
+          0.15327763072932013,
+          0.25996083632876654,
+          0.19928028138584356,
+          0.15438336370233177,
+          0.42255537449664105,
+          0.14877633563958348,
+          0.2089694892462187,
+          0.1676053141202631,
+          0.1868328868342875,
+          null,
+          0.03195364587813982,
+          0.04037470176968433,
+          0.03621880488685475,
+          0.02683333931371349,
+          0.03135457148975306,
+          0.5289056219609666,
+          0.07049528794179843,
+          null,
+          0.0069947599938789224,
+          null,
+          0.012196332268483025,
+          null,
+          0.02043565577036963,
+          0.004806341058792118,
+          null,
+          null,
+          null,
+          0.00600953864424617,
+          null,
+          0.007023519670909477,
+          0.02527052744293563,
+          0.005795708852407875,
+          0.015474880935552937,
+          null,
+          null,
+          0.05127663718228692,
+          0.06535400226294909,
+          0.31397900586637434,
+          0.08092810855202284,
+          0.06429727211811959,
+          0.22911472573227756,
+          0.11358251233739636,
+          0.028896499294073435,
+          0.021160433343863833,
+          0.03585562635994752,
+          null,
+          null,
+          null,
+          0.00819598734453007,
+          null,
+          0.007461060247546667,
+          0.023514739246089232,
+          0.006426984891425287,
+          0.00982474986159098,
+          null,
+          0.42799550088244404,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.004477203954453901,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.0042337084985744275,
+          0.00272567325322164,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.07493511721197807,
+          null,
+          null,
+          0.04485309636575013,
+          0.055053293978187166,
+          0.029282682984734798,
+          null,
+          null,
+          null,
+          0.010577636691265642,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.022806302539459224,
+          0.009046934181709498,
+          null,
+          null,
+          0.00716717890246615,
+          null,
+          0.004431596242884099,
+          null,
+          null,
+          0.04766010303182762,
+          null,
+          0.19769885597910572,
+          0.14113735404992622,
+          0.042039948789372415,
+          0.03275086602499377,
+          0.021549453620463753,
+          0.01739244484343293,
+          0.013177251366811908,
+          null,
+          null,
+          0.006053746370378008,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.036968542675508906,
+          0.006132121004350857,
+          null,
+          0.003831232013719512,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.0582403200014518,
+          0.08836481956758517,
+          null,
+          0.024923895936021404,
+          0.0510202310624785,
+          null,
+          null,
+          0.07616140854348467,
+          null,
+          0.004569064085715787,
+          0.47914520297625396,
+          0.02413214103572689,
+          null,
+          0.009976328051148422,
+          0.004064696456950321,
+          null,
+          0.0045208943910955545,
+          null,
+          0.009979083250764659,
+          0.005433348354561362,
+          0.0067372092310368755,
+          null,
+          null,
+          null,
+          0.00641749485160546,
+          null,
+          0.004281496550726481,
+          null,
+          0.01030493675411428,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.057562623771642264,
+          null,
+          null,
+          null,
+          0.05560863991220549,
+          0.03215315207241869,
+          0.005277111576948856,
+          null,
+          0.005009924560600254,
+          null,
+          0.009213917469701158,
+          0.009433162736794157,
+          null,
+          0.0032027869055206437,
+          0.006080203115016043,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.005509244993216195,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.17342386502530235,
+          0.1139802314837991,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.009386052787481995,
+          null,
+          null,
+          0.009409853416016004,
+          0.01360864949316146,
+          0.24427955088117564,
+          0.014015069947180317,
+          0.010715920910684473,
+          null,
+          0.008048003612065542,
+          null,
+          0.013372249678542416,
+          0.005555155396860132,
+          null,
+          0.008231762367427566,
+          0.015851928910464573,
+          0.011567238153236743,
+          0.07958111729797036,
+          0.0030628143841051544,
+          null,
+          null,
+          null,
+          null,
+          0.04363847732169986,
+          0.026865458431022754,
+          0.010196904465021871,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.009322522774441587,
+          0.004107231371231022,
+          0.003213057740063129,
+          null,
+          null,
+          null,
+          null,
+          0.019445488676499898,
+          null,
+          null,
+          null,
+          null,
+          0.018390493845502738,
+          0.017020642977590792,
+          0.014655755647124988,
+          0.008119282914183956,
+          null,
+          null,
+          null,
+          null,
+          0.01610842787466118,
+          0.0065473480278096215,
+          null,
+          null,
+          null,
+          null,
+          0.0040433776214666,
+          0.018645536155866976,
+          0.00817225933609396,
+          0.054233774503311946,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.00452779122439631,
+          0.008264345230542765,
+          0.012209293382003796,
+          0.3025637041319551,
+          0.19021421154085108,
+          0.17539125653290197,
+          0.25898553919163303,
+          0.14121656646095535,
+          0.007193259046623845,
+          0.028662412766541148,
+          0.02217022851659537,
+          0.17141747862746587,
+          0.1760902567573035,
+          0.14867026285378385,
+          0.16161761387091717,
+          0.20878750719780317,
+          0.20561749964872295,
+          0.14141126781328966,
+          0.16495352720785555,
+          0.16588794633449042,
+          0.2198928938047326,
+          0.15467869038183307,
+          0.2055107921241793,
+          0.15396648208779035,
+          0.20938370001060813,
+          0.1694262123717464,
+          0.1616281839630428,
+          0.15357569596752965,
+          0.15649720024521832,
+          0.16202904269073498,
+          0.15654128998906985,
+          0.2192620570595446,
+          0.15129402948918197,
+          0.20208715254128445,
+          0.20694336302193825,
+          0.15243751126231517,
+          0.1788012094746215,
+          0.04718764459548805,
+          0.012033854567733775,
+          null,
+          0.005341403032989847,
+          null,
+          null,
+          null,
+          0.13711046902944596,
+          0.00758264852406206,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.03935873897957377,
+          0.003483355680532227,
+          0.01530655153472942,
+          0.005977611076020168,
+          0.00864276853865886,
+          null,
+          null,
+          null,
+          0.004431088266560339,
+          null,
+          null,
+          0.0034456869594254244,
+          0.04126918440493585,
+          null,
+          0.019922609687686603,
+          0.008559755509505787,
+          null,
+          0.006235328857921589,
+          null,
+          null,
+          0.05267938794222038,
+          0.0030745699789736887,
+          0.030519438159446313,
+          0.014520987739972038,
+          null,
+          null,
+          null,
+          null,
+          0.004428596871035982,
+          null,
+          null,
+          null,
+          0.0026156775692070342,
+          0.01157634914185925,
+          null,
+          null,
+          0.004160694390231702,
+          0.017359732298982078,
+          0.009783290721064167,
+          0.007570288631141899,
+          0.04430892180039589,
+          0.010839501208391496,
+          null,
+          null,
+          0.0082152837821258,
+          0.015343193879094757,
+          0.010832194630417942,
+          null,
+          0.004120261103744727,
+          null,
+          null,
+          null,
+          0.010168381057128388,
+          null,
+          null,
+          0.009502562009560622,
+          0.01952552135071455,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.006308562981700424,
+          0.008596934851597942,
+          null,
+          null,
+          0.006622120392910535,
+          0.01235946412106042,
+          0.009355149822364288,
+          null,
+          null,
+          null,
+          0.006975542996636714,
+          0.00850183831153712,
+          0.007293423051429184,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.17634188920859292,
+          0.148710152606359,
+          null
+        ]
+      },
+      "lwlrap": {
+        "configuration": {},
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": 0.07732741517980513
+      },
+      "macro_f1": {
+        "configuration": {
+          "average": "macro",
+          "threshold": 0.5
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": 0.0017461750180019374
+      },
+      "map": {
+        "configuration": {
+          "ignore_nan": true,
+          "no_positive": "nan"
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": 0.08135939642522903
+      },
+      "micro_averaged_accuracy": {
+        "configuration": {
+          "threshold": 0.5
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": 0.9666493376809737
+      },
+      "micro_f1": {
+        "configuration": {
+          "average": "micro",
+          "threshold": 0.5
+        },
+        "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+        "status": "computed",
+        "value": 0.002595875442352706
+      }
+    },
+    "top10_class_f1": {
+      "classes": [
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Music",
+          "mapped_model_output_class_id": "/m/04rlf",
+          "mapped_model_output_index": 137,
+          "mapped_model_output_indices": [
+            137
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Music",
+          "native_class_name": "Music",
+          "positive_sample_count": 1972,
+          "prevalence_fraction": 0.19274753201055617,
+          "rank": 1,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.02415270744059213,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "max(Door, Doorbell, Ding-dong, Sliding door, Slam, Cupboard open or close, Drawer open or close, Dishes, pots, and pans, Cutlery, silverware, Chopping (food), Frying (food), Microwave oven, Blender, Water tap, faucet, Sink (filling or washing), Bathtub (filling or washing), Hair dryer, Toilet flush, Toothbrush, Electric toothbrush, Vacuum cleaner, Zipper (clothing), Keys jangling, Coin (dropping), Scissors, Electric shaver, electric razor, Shuffling cards, Typing, Typewriter, Computer keyboard, Writing, Alarm clock, Television, Radio)",
+          "mapped_model_output_class_id": null,
+          "mapped_model_output_index": null,
+          "mapped_model_output_indices": [
+            354,
+            355,
+            356,
+            357,
+            358,
+            362,
+            363,
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371,
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382,
+            383,
+            384,
+            385,
+            386,
+            387,
+            395,
+            524,
+            525
+          ],
+          "mapping_relation": "descendant_aggregation",
+          "native_class_id": "Domestic_sounds_and_home_sounds",
+          "native_class_name": "Domestic_sounds_and_home_sounds",
+          "positive_sample_count": 1947,
+          "prevalence_fraction": 0.19030397810575703,
+          "rank": 2,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Musical_instrument",
+          "mapped_model_output_class_id": "/m/04szw",
+          "mapped_model_output_index": 138,
+          "mapped_model_output_indices": [
+            138
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Musical_instrument",
+          "native_class_name": "Musical_instrument",
+          "positive_sample_count": 1940,
+          "prevalence_fraction": 0.18961978301241325,
+          "rank": 3,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.06376290974405029,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "max(Speech, Male speech, man speaking, Female speech, woman speaking, Child speech, kid speaking, Conversation, Narration, monologue, Babbling, Speech synthesizer, Shout, Bellow, Whoop, Yell, Battle cry, Children shouting, Screaming, Whispering, Laughter, Baby laughter, Giggle, Belly laugh, Chuckle, chortle, Crying, sobbing, Baby cry, infant cry, Whimper, Wail, moan, Sigh, Singing, Choir, Yodeling, Chant, Mantra, Male singing, Female singing, Child singing, Synthetic singing, Rapping, Humming, Groan, Grunt, Chatter, Children playing, Vocal music, A capella)",
+          "mapped_model_output_class_id": null,
+          "mapped_model_output_index": null,
+          "mapped_model_output_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            68,
+            71,
+            254,
+            255
+          ],
+          "mapping_relation": "descendant_aggregation",
+          "native_class_id": "Human_voice",
+          "native_class_name": "Human_voice",
+          "positive_sample_count": 1633,
+          "prevalence_fraction": 0.15961294106147983,
+          "rank": 4,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Animal",
+          "mapped_model_output_class_id": "/m/0jbk",
+          "mapped_model_output_index": 72,
+          "mapped_model_output_indices": [
+            72
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Animal",
+          "native_class_name": "Animal",
+          "positive_sample_count": 1082,
+          "prevalence_fraction": 0.10575701299970677,
+          "rank": 5,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Vehicle",
+          "mapped_model_output_class_id": "/m/07yv9",
+          "mapped_model_output_index": 300,
+          "mapped_model_output_indices": [
+            300
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Vehicle",
+          "native_class_name": "Vehicle",
+          "positive_sample_count": 1030,
+          "prevalence_fraction": 0.10067442087772456,
+          "rank": 6,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Percussion",
+          "mapped_model_output_class_id": "/m/0l14md",
+          "mapped_model_output_index": 161,
+          "mapped_model_output_indices": [
+            161
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Percussion",
+          "native_class_name": "Percussion",
+          "positive_sample_count": 825,
+          "prevalence_fraction": 0.08063727885837162,
+          "rank": 7,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.002509410288582183,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Speech",
+          "mapped_model_output_class_id": "/m/09x0r",
+          "mapped_model_output_index": 0,
+          "mapped_model_output_indices": [
+            0
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Speech",
+          "native_class_name": "Speech",
+          "positive_sample_count": 785,
+          "prevalence_fraction": 0.076727592610693,
+          "rank": 8,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "Wild_animals",
+          "mapped_model_output_class_id": "/m/01280g",
+          "mapped_model_output_index": 108,
+          "mapped_model_output_indices": [
+            108
+          ],
+          "mapping_relation": "exact_mid",
+          "native_class_id": "Wild_animals",
+          "native_class_name": "Wild_animals",
+          "positive_sample_count": 751,
+          "prevalence_fraction": 0.07340435930016616,
+          "rank": 9,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        },
+        {
+          "f1": 0.0030349013657056147,
+          "label_space": "AudioSet 527 MID model-output space via exact MID plus reviewed FSD50K projection mapping",
+          "mapped_class_name": "max(Cheering, Applause, Chatter, Crowd, Hubbub, speech noise, speech babble)",
+          "mapped_model_output_class_id": null,
+          "mapped_model_output_index": null,
+          "mapped_model_output_indices": [
+            66,
+            67,
+            68,
+            69,
+            70
+          ],
+          "mapping_relation": "descendant_aggregation",
+          "native_class_id": "Human_group_actions",
+          "native_class_name": "Human_group_actions",
+          "positive_sample_count": 631,
+          "prevalence_fraction": 0.06167530055713029,
+          "rank": 10,
+          "reason": null,
+          "status": "evaluable",
+          "threshold": 0.5
+        }
+      ],
+      "frequencies_from_full_metadata": true,
+      "limited_batches_can_affect_metric_values_but_not_selection": true,
+      "selection_method": "top 10 native classes by positive sample count in full evaluation metadata",
+      "tie_breaking_rule": "stable dataset class order, then native class ID"
+    }
+  },
+  "model_information": {
+    "expected_sample_rate": 32000,
+    "output_class_count": 527,
+    "output_label_space": "AudioSet 527 MID order from datasets/AudioSet_meta/class_labels_indices.csv",
+    "output_semantics": "sigmoid probabilities according to local model wrappers"
+  },
+  "run_identity": {
+    "checkpoint_identifier": "weights_ep69it3124-0.47998",
+    "checkpoint_path": "models/m2d/weights_ep69it3124-0.47998.pth",
+    "dataset_display_name": "FSD50K",
+    "dataset_name": "fsd50k",
+    "evaluation_timestamp": "2026-07-13T22:24:33.006517+00:00",
+    "model_class": "M2D",
+    "model_name": "m2d"
+  },
+  "runtime_summary": {
+    "evaluated_batch_count": 1279,
+    "samples_per_second": 56.00313907144814,
+    "total_evaluation_duration_seconds": 182.68618812505156
+  },
+  "status": "success",
+  "warnings_and_failures": {
+    "failed_samples_preview": [],
+    "skipped_samples_preview": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "description": "Derived FSD50K-to-AudioSet projection for FSD50K labels whose MIDs are absent from datasets/AudioSet_meta/class_labels_indices.csv.",
+    "source_mapping": "taxonomy/salt/py-salt/assets/salt_event_mapping.tsv",
+    "audioset_label_source": "datasets/AudioSet_meta/class_labels_indices.csv",
+    "aggregation": "max over listed AudioSet model-output probabilities when a source label maps to multiple AudioSet labels"
+  },
+  "mappings": {
+    "Crash_cymbal": {
+      "source_mid": "/m/0bm0k",
+      "salt_node": "cymbal",
+      "relation": "ancestor_projection",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 171, "mid": "/m/01qbl", "label": "Cymbal"}
+      ]
+    },
+    "Domestic_sounds_and_home_sounds": {
+      "source_mid": "/t/dd00071",
+      "salt_node": "domestic_sounds",
+      "relation": "descendant_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 354, "mid": "/m/02dgv", "label": "Door"},
+        {"index": 355, "mid": "/m/03wwcy", "label": "Doorbell"},
+        {"index": 356, "mid": "/m/07r67yg", "label": "Ding-dong"},
+        {"index": 357, "mid": "/m/02y_763", "label": "Sliding door"},
+        {"index": 358, "mid": "/m/07rjzl8", "label": "Slam"},
+        {"index": 362, "mid": "/m/0642b4", "label": "Cupboard open or close"},
+        {"index": 363, "mid": "/m/0fqfqc", "label": "Drawer open or close"},
+        {"index": 364, "mid": "/m/04brg2", "label": "Dishes, pots, and pans"},
+        {"index": 365, "mid": "/m/023pjk", "label": "Cutlery, silverware"},
+        {"index": 366, "mid": "/m/07pn_8q", "label": "Chopping (food)"},
+        {"index": 367, "mid": "/m/0dxrf", "label": "Frying (food)"},
+        {"index": 368, "mid": "/m/0fx9l", "label": "Microwave oven"},
+        {"index": 369, "mid": "/m/02pjr4", "label": "Blender"},
+        {"index": 370, "mid": "/m/02jz0l", "label": "Water tap, faucet"},
+        {"index": 371, "mid": "/m/0130jx", "label": "Sink (filling or washing)"},
+        {"index": 372, "mid": "/m/03dnzn", "label": "Bathtub (filling or washing)"},
+        {"index": 373, "mid": "/m/03wvsk", "label": "Hair dryer"},
+        {"index": 374, "mid": "/m/01jt3m", "label": "Toilet flush"},
+        {"index": 375, "mid": "/m/012xff", "label": "Toothbrush"},
+        {"index": 376, "mid": "/m/04fgwm", "label": "Electric toothbrush"},
+        {"index": 377, "mid": "/m/0d31p", "label": "Vacuum cleaner"},
+        {"index": 378, "mid": "/m/01s0vc", "label": "Zipper (clothing)"},
+        {"index": 379, "mid": "/m/03v3yw", "label": "Keys jangling"},
+        {"index": 380, "mid": "/m/0242l", "label": "Coin (dropping)"},
+        {"index": 381, "mid": "/m/01lsmm", "label": "Scissors"},
+        {"index": 382, "mid": "/m/02g901", "label": "Electric shaver, electric razor"},
+        {"index": 383, "mid": "/m/05rj2", "label": "Shuffling cards"},
+        {"index": 384, "mid": "/m/0316dw", "label": "Typing"},
+        {"index": 385, "mid": "/m/0c2wf", "label": "Typewriter"},
+        {"index": 386, "mid": "/m/01m2v", "label": "Computer keyboard"},
+        {"index": 387, "mid": "/m/081rb", "label": "Writing"},
+        {"index": 395, "mid": "/m/046dlr", "label": "Alarm clock"},
+        {"index": 524, "mid": "/m/07c52", "label": "Television"},
+        {"index": 525, "mid": "/m/06bz3", "label": "Radio"}
+      ]
+    },
+    "Gull_and_seagull": {
+      "source_mid": "/m/01dwxx",
+      "salt_node": "bird",
+      "relation": "ancestor_projection",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 111, "mid": "/m/015p6", "label": "Bird"}
+      ]
+    },
+    "Human_group_actions": {
+      "source_mid": "/t/dd00012",
+      "salt_node": "human_group_actions",
+      "relation": "descendant_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 66, "mid": "/m/053hz1", "label": "Cheering"},
+        {"index": 67, "mid": "/m/028ght", "label": "Applause"},
+        {"index": 68, "mid": "/m/07rkbfh", "label": "Chatter"},
+        {"index": 69, "mid": "/m/03qtwd", "label": "Crowd"},
+        {"index": 70, "mid": "/m/07qfr4h", "label": "Hubbub, speech noise, speech babble"}
+      ]
+    },
+    "Human_voice": {
+      "source_mid": "/m/09l8g",
+      "salt_node": "human_voice",
+      "relation": "descendant_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 0, "mid": "/m/09x0r", "label": "Speech"},
+        {"index": 1, "mid": "/m/05zppz", "label": "Male speech, man speaking"},
+        {"index": 2, "mid": "/m/02zsn", "label": "Female speech, woman speaking"},
+        {"index": 3, "mid": "/m/0ytgt", "label": "Child speech, kid speaking"},
+        {"index": 4, "mid": "/m/01h8n0", "label": "Conversation"},
+        {"index": 5, "mid": "/m/02qldy", "label": "Narration, monologue"},
+        {"index": 6, "mid": "/m/0261r1", "label": "Babbling"},
+        {"index": 7, "mid": "/m/0brhx", "label": "Speech synthesizer"},
+        {"index": 8, "mid": "/m/07p6fty", "label": "Shout"},
+        {"index": 9, "mid": "/m/07q4ntr", "label": "Bellow"},
+        {"index": 10, "mid": "/m/07rwj3x", "label": "Whoop"},
+        {"index": 11, "mid": "/m/07sr1lc", "label": "Yell"},
+        {"index": 12, "mid": "/m/04gy_2", "label": "Battle cry"},
+        {"index": 13, "mid": "/t/dd00135", "label": "Children shouting"},
+        {"index": 14, "mid": "/m/03qc9zr", "label": "Screaming"},
+        {"index": 15, "mid": "/m/02rtxlg", "label": "Whispering"},
+        {"index": 16, "mid": "/m/01j3sz", "label": "Laughter"},
+        {"index": 17, "mid": "/t/dd00001", "label": "Baby laughter"},
+        {"index": 18, "mid": "/m/07r660_", "label": "Giggle"},
+        {"index": 20, "mid": "/m/07sq110", "label": "Belly laugh"},
+        {"index": 21, "mid": "/m/07rgt08", "label": "Chuckle, chortle"},
+        {"index": 22, "mid": "/m/0463cq4", "label": "Crying, sobbing"},
+        {"index": 23, "mid": "/t/dd00002", "label": "Baby cry, infant cry"},
+        {"index": 24, "mid": "/m/07qz6j3", "label": "Whimper"},
+        {"index": 25, "mid": "/m/07qw_06", "label": "Wail, moan"},
+        {"index": 26, "mid": "/m/07plz5l", "label": "Sigh"},
+        {"index": 27, "mid": "/m/015lz1", "label": "Singing"},
+        {"index": 28, "mid": "/m/0l14jd", "label": "Choir"},
+        {"index": 29, "mid": "/m/01swy6", "label": "Yodeling"},
+        {"index": 30, "mid": "/m/02bk07", "label": "Chant"},
+        {"index": 31, "mid": "/m/01c194", "label": "Mantra"},
+        {"index": 32, "mid": "/t/dd00003", "label": "Male singing"},
+        {"index": 33, "mid": "/t/dd00004", "label": "Female singing"},
+        {"index": 34, "mid": "/t/dd00005", "label": "Child singing"},
+        {"index": 35, "mid": "/t/dd00006", "label": "Synthetic singing"},
+        {"index": 36, "mid": "/m/06bxc", "label": "Rapping"},
+        {"index": 37, "mid": "/m/02fxyj", "label": "Humming"},
+        {"index": 38, "mid": "/m/07s2xch", "label": "Groan"},
+        {"index": 39, "mid": "/m/07r4k75", "label": "Grunt"},
+        {"index": 68, "mid": "/m/07rkbfh", "label": "Chatter"},
+        {"index": 71, "mid": "/t/dd00013", "label": "Children playing"},
+        {"index": 254, "mid": "/m/0y4f8", "label": "Vocal music"},
+        {"index": 255, "mid": "/m/0z9c", "label": "A capella"}
+      ]
+    },
+    "Packing_tape_and_duct_tape": {
+      "source_mid": "/m/05mxj0q",
+      "salt_node": "duct_tape",
+      "relation": "broad_context_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 378, "mid": "/m/01s0vc", "label": "Zipper (clothing)"},
+        {"index": 381, "mid": "/m/01lsmm", "label": "Scissors"}
+      ]
+    },
+    "Respiratory_sounds": {
+      "source_mid": "/m/09hlz4",
+      "salt_node": "breathing",
+      "relation": "descendant_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 26, "mid": "/m/07plz5l", "label": "Sigh"},
+        {"index": 41, "mid": "/m/0lyf6", "label": "Breathing"},
+        {"index": 42, "mid": "/m/07mzm6", "label": "Wheeze"},
+        {"index": 43, "mid": "/m/01d3sd", "label": "Snoring"},
+        {"index": 44, "mid": "/m/07s0dtb", "label": "Gasp"},
+        {"index": 45, "mid": "/m/07pyy8b", "label": "Pant"},
+        {"index": 46, "mid": "/m/07q0yl5", "label": "Snort"}
+      ]
+    },
+    "Screech": {
+      "source_mid": "/m/07q8k13",
+      "salt_node": "source-ambiguous_sounds",
+      "relation": "curated_source_ambiguous_aggregation",
+      "aggregation": "max",
+      "audioset_targets": [
+        {"index": 361, "mid": "/m/07q6cd_", "label": "Squeak"},
+        {"index": 474, "mid": "/m/07qb_dv", "label": "Scratch"},
+        {"index": 475, "mid": "/m/07qv4k0", "label": "Scrape"},
+        {"index": 484, "mid": "/m/07rv4dm", "label": "Clang"},
+        {"index": 485, "mid": "/m/07s02z0", "label": "Squeal"},
+        {"index": 486, "mid": "/m/07qh7jl", "label": "Creak"}
+      ]
+    }
+  }
+}

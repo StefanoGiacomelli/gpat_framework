@@ -1,0 +1,476 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "yamnet",
+    "model_class": "models.yamnet.model.YAMNet",
+    "checkpoint_path": "models/yamnet/yamnet.pth",
+    "model_configuration": {},
+    "module_sample_rate": 16000
+  },
+  "environment": {
+    "timestamp_utc": "2026-08-09T21:24:37.649223+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 16000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 160000,
+    "waveform_shape": [
+      1,
+      160000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 160000,
+      "waveform_shape": [
+        1,
+        160000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.49598604202037677,
+      0.4997668750002049,
+      0.49165304098278284,
+      0.4866219579707831,
+      0.489084874978289,
+      0.49912987498100847,
+      0.5059252089704387,
+      0.5019459169707261,
+      0.5001995000056922,
+      0.4935130000230856,
+      0.5005550000350922,
+      0.4982630829908885,
+      0.49684133304981515,
+      0.495858334004879,
+      0.4941469170153141,
+      0.4907544580055401,
+      0.49201475002337247,
+      0.4987861670088023,
+      0.5012048330390826,
+      0.49753333296393976
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.4866219579707831,
+      "max": 0.5059252089704387,
+      "mean": 0.4964892250020057,
+      "std": 0.004824169610557907,
+      "median": 0.49718733300687745,
+      "skewness": -0.26004692324653006,
+      "kurtosis": -0.2583804442752795,
+      "iqr": 0.006736593728419393,
+      "p75": 0.49987503125157673,
+      "p90": 0.5012789414322469
+    }
+  },
+  "parameters": {
+    "total_parameters": 3746575,
+    "trainable_parameters": 3746575,
+    "non_trainable_parameters": 0,
+    "total_parameters_millions": 3.746575,
+    "trainable_parameters_millions": 3.746575,
+    "parameter_memory_mb": 14.9863,
+    "bytes_by_dtype": {
+      "torch.float32": 14986300
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 288.03072
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 958.775296
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.311936
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.311936
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.32832
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.32832
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.393856
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.508544
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.508544
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.57408
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 966.57408
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 966.311936
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.311936
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.32832
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.32832
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.393856
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.459392
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.508544
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.508544
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.524928
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.57408
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.57408
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 966.57408
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          7.53663999999992,
+          0.0,
+          0.016384000000016385,
+          0.0,
+          0.06553600000006554,
+          0.06553599999995185,
+          0.0,
+          0.0,
+          0.049152000000049156,
+          0.0,
+          0.016384000000016385,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.04915199999993547,
+          0.0,
+          0.0
+        ],
+        "mean": 0.38993919999999777,
+        "std": 1.6823206018282264
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 1354297920,
+        "unsupported_ops": {
+          "aten::pad": 28,
+          "aten::stft": 1,
+          "aten::abs": 1,
+          "aten::pow": 2,
+          "aten::add": 57,
+          "aten::log": 1,
+          "aten::unfold": 1,
+          "aten::mul": 29,
+          "aten::sub": 112,
+          "aten::sigmoid": 1,
+          "aten::mean": 1
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 3746575,
+        "trainable_params": 3746575,
+        "total_mult_adds": 1314678685,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nYAMNet                                   [1, 527]                  --\n\u251c\u2500AudioPreprocessor: 1-1                 [19, 1, 96, 64]           --\n\u2502    \u2514\u2500YAMNetLogMelSpectrogram: 2-1      [1, 1, 1001, 64]          --\n\u2502    \u2502    \u2514\u2500Spectrogram: 3-1             [1, 257, 1001]            --\n\u2502    \u2502    \u2514\u2500MelScale: 3-2                [1, 64, 1001]             --\n\u251c\u2500YAMNetBackbone: 1-2                    [19, 1024]                --\n\u2502    \u2514\u2500Conv: 2-2                         [19, 32, 48, 32]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-3              [19, 32, 48, 32]          352\n\u2502    \u2514\u2500SeparableConv: 2-3                [19, 64, 48, 32]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-4              [19, 32, 48, 32]          352\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-5              [19, 64, 48, 32]          2,176\n\u2502    \u2514\u2500SeparableConv: 2-4                [19, 128, 24, 16]         --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-6              [19, 64, 24, 16]          704\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-7              [19, 128, 24, 16]         8,448\n\u2502    \u2514\u2500SeparableConv: 2-5                [19, 128, 24, 16]         --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-8              [19, 128, 24, 16]         1,408\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-9              [19, 128, 24, 16]         16,640\n\u2502    \u2514\u2500SeparableConv: 2-6                [19, 256, 12, 8]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-10             [19, 128, 12, 8]          1,408\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-11             [19, 256, 12, 8]          33,280\n\u2502    \u2514\u2500SeparableConv: 2-7                [19, 256, 12, 8]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-12             [19, 256, 12, 8]          2,816\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-13             [19, 256, 12, 8]          66,048\n\u2502    \u2514\u2500SeparableConv: 2-8                [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-14             [19, 256, 6, 4]           2,816\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-15             [19, 512, 6, 4]           132,096\n\u2502    \u2514\u2500SeparableConv: 2-9                [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-16             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-17             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-10               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-18             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-19             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-11               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-20             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-21             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-12               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-22             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-23             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-13               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-24             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-25             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-14               [19, 1024, 3, 2]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-26             [19, 512, 3, 2]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-27             [19, 1024, 3, 2]          526,336\n\u2502    \u2514\u2500SeparableConv: 2-15               [19, 1024, 3, 2]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-28             [19, 1024, 3, 2]          11,264\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-29             [19, 1024, 3, 2]          1,050,624\n\u251c\u2500Linear: 1-3                            [19, 527]                 540,175\n==========================================================================================\nTotal params: 3,746,575\nTrainable params: 3,746,575\nNon-trainable params: 0\nTotal mult-adds (G): 1.31\n==========================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 187.79\nParams size (MB): 14.99\nEstimated Total Size (MB): 203.42\n=========================================================================================="
+      },
+      "flops": 1354297920,
+      "macs_estimated": 677148960.0,
+      "gflops": 1.35429792,
+      "gmacs_estimated": 0.67714896
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        160000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 1354297920,
+        "unsupported_ops": {
+          "aten::pad": 28,
+          "aten::stft": 1,
+          "aten::abs": 1,
+          "aten::pow": 2,
+          "aten::add": 57,
+          "aten::log": 1,
+          "aten::unfold": 1,
+          "aten::mul": 29,
+          "aten::sub": 112,
+          "aten::sigmoid": 1,
+          "aten::mean": 1
+        },
+        "uncalled_modules": [],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 3746575,
+        "trainable_params": 3746575,
+        "total_mult_adds": 1314678685,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nYAMNet                                   [1, 527]                  --\n\u251c\u2500AudioPreprocessor: 1-1                 [19, 1, 96, 64]           --\n\u2502    \u2514\u2500YAMNetLogMelSpectrogram: 2-1      [1, 1, 1001, 64]          --\n\u2502    \u2502    \u2514\u2500Spectrogram: 3-1             [1, 257, 1001]            --\n\u2502    \u2502    \u2514\u2500MelScale: 3-2                [1, 64, 1001]             --\n\u251c\u2500YAMNetBackbone: 1-2                    [19, 1024]                --\n\u2502    \u2514\u2500Conv: 2-2                         [19, 32, 48, 32]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-3              [19, 32, 48, 32]          352\n\u2502    \u2514\u2500SeparableConv: 2-3                [19, 64, 48, 32]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-4              [19, 32, 48, 32]          352\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-5              [19, 64, 48, 32]          2,176\n\u2502    \u2514\u2500SeparableConv: 2-4                [19, 128, 24, 16]         --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-6              [19, 64, 24, 16]          704\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-7              [19, 128, 24, 16]         8,448\n\u2502    \u2514\u2500SeparableConv: 2-5                [19, 128, 24, 16]         --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-8              [19, 128, 24, 16]         1,408\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-9              [19, 128, 24, 16]         16,640\n\u2502    \u2514\u2500SeparableConv: 2-6                [19, 256, 12, 8]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-10             [19, 128, 12, 8]          1,408\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-11             [19, 256, 12, 8]          33,280\n\u2502    \u2514\u2500SeparableConv: 2-7                [19, 256, 12, 8]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-12             [19, 256, 12, 8]          2,816\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-13             [19, 256, 12, 8]          66,048\n\u2502    \u2514\u2500SeparableConv: 2-8                [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-14             [19, 256, 6, 4]           2,816\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-15             [19, 512, 6, 4]           132,096\n\u2502    \u2514\u2500SeparableConv: 2-9                [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-16             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-17             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-10               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-18             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-19             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-11               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-20             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-21             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-12               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-22             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-23             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-13               [19, 512, 6, 4]           --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-24             [19, 512, 6, 4]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-25             [19, 512, 6, 4]           263,168\n\u2502    \u2514\u2500SeparableConv: 2-14               [19, 1024, 3, 2]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-26             [19, 512, 3, 2]           5,632\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-27             [19, 1024, 3, 2]          526,336\n\u2502    \u2514\u2500SeparableConv: 2-15               [19, 1024, 3, 2]          --\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-28             [19, 1024, 3, 2]          11,264\n\u2502    \u2502    \u2514\u2500ConvBnRelu: 3-29             [19, 1024, 3, 2]          1,050,624\n\u251c\u2500Linear: 1-3                            [19, 527]                 540,175\n==========================================================================================\nTotal params: 3,746,575\nTrainable params: 3,746,575\nNon-trainable params: 0\nTotal mult-adds (G): 1.31\n==========================================================================================\nInput size (MB): 0.64\nForward/backward pass size (MB): 187.79\nParams size (MB): 14.99\nEstimated Total Size (MB): 203.42\n=========================================================================================="
+      },
+      "flops": 1354297920,
+      "macs_estimated": 677148960.0,
+      "gflops": 1.35429792,
+      "gmacs_estimated": 0.67714896
+    }
+  },
+  "minimum_input": {
+    "status": "success",
+    "samples": 257,
+    "seconds": 0.0160625,
+    "sample_rate": 16000,
+    "search_configuration": {
+      "initial_lower_bound_seconds": 0.001,
+      "initial_upper_bound_seconds": 10.0,
+      "max_upper_bound_seconds": 10.0
+    },
+    "attempt_count": 19,
+    "attempts_tail": [
+      {
+        "samples": 1265,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 640,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 328,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 172,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (256, 256) at dimension 2 of input [1, 1, 172]"
+      },
+      {
+        "samples": 250,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (256, 256) at dimension 2 of input [1, 1, 250]"
+      },
+      {
+        "samples": 289,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 270,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 260,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 255,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (256, 256) at dimension 2 of input [1, 1, 255]"
+      },
+      {
+        "samples": 258,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 257,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 256,
+        "ok": false,
+        "classification": "insufficient_input_or_shape",
+        "error": "Argument #4: Padding size should be less than the corresponding input dimension, but got: padding (256, 256) at dimension 2 of input [1, 1, 256]"
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}

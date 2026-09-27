@@ -1,0 +1,432 @@
+{
+  "schema_version": "v1",
+  "status": "success",
+  "model_identity": {
+    "model_name": "panns_wavegram_logmel_cnn14",
+    "model_class": "models.panns.model_wavegram_logmel_cnn14.Wavegram_Logmel_Cnn14",
+    "checkpoint_path": "models/panns/Wavegram_Logmel_Cnn14_mAP=0.439.pth",
+    "model_configuration": {},
+    "module_sample_rate": 32000
+  },
+  "environment": {
+    "timestamp_utc": "2026-07-11T09:15:12.376945+00:00",
+    "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "pytorch_version": "2.13.0",
+    "operating_system": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "requested_device": "cpu",
+    "effective_device": "cpu",
+    "fallback_reason": null,
+    "cuda_available": false,
+    "mps_available": true,
+    "cuda_device_name": null
+  },
+  "input": {
+    "sample_rate": 32000,
+    "user_duration_seconds": 10.0,
+    "number_of_samples": 320000,
+    "waveform_shape": [
+      1,
+      320000
+    ],
+    "input_rank": 2,
+    "input_description": "mono waveform tensor shaped (batch, samples)",
+    "reference_10s": {
+      "duration_seconds": 10.0,
+      "number_of_samples": 320000,
+      "waveform_shape": [
+        1,
+        320000
+      ]
+    }
+  },
+  "timing": {
+    "warmup_count": 5,
+    "measured_run_count": 20,
+    "measured_times": [
+      0.08827004197519273,
+      0.08962745900498703,
+      0.09184720896882936,
+      0.08942191698588431,
+      0.09139983297791332,
+      0.08810783305671066,
+      0.08729316701646894,
+      0.08777670800918713,
+      0.09071145800407976,
+      0.0913017499842681,
+      0.09097900002961978,
+      0.08955837500980124,
+      0.09099458297714591,
+      0.09176504198694602,
+      0.09417716698953882,
+      0.09068395796930417,
+      0.09058612503577024,
+      0.08949824998853728,
+      0.08928620803635567,
+      0.08677083294605836
+    ],
+    "statistics": {
+      "unit": "seconds",
+      "count": 20,
+      "min": 0.08677083294605836,
+      "max": 0.09417716698953882,
+      "mean": 0.09000284584762994,
+      "std": 0.0018005137491170495,
+      "median": 0.09010679202037863,
+      "skewness": 0.14674440857685636,
+      "kurtosis": 0.19975738560106837,
+      "iqr": 0.0020392082078615203,
+      "p75": 0.09107137472892646,
+      "p90": 0.09177325868513435
+    }
+  },
+  "parameters": {
+    "total_parameters": 82148943,
+    "trainable_parameters": 81065487,
+    "non_trainable_parameters": 1083456,
+    "total_parameters_millions": 82.148943,
+    "trainable_parameters_millions": 81.065487,
+    "parameter_memory_mb": 328.595772,
+    "bytes_by_dtype": {
+      "torch.float32": 328595772
+    }
+  },
+  "runtime_memory": {
+    "model_loaded_state": {
+      "phase": "model_loaded",
+      "process_rss_mb": 4441.62048
+    },
+    "per_run_before": [
+      {
+        "phase": "before",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4595.449856
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4596.498432
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4596.498432
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.76
+      },
+      {
+        "phase": "before",
+        "process_rss_mb": 4597.76
+      }
+    ],
+    "per_run_after": [
+      {
+        "phase": "after",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4595.3024
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4595.449856
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4596.498432
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4596.498432
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.727232
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.76
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.76
+      },
+      {
+        "phase": "after",
+        "process_rss_mb": 4597.76
+      }
+    ],
+    "summary": {
+      "increment": {
+        "supported": true,
+        "unit": "decimal MB",
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.14745600000060222,
+          1.0485760000001392,
+          0.0,
+          1.2287999999998647,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.03276800000003277,
+          0.0,
+          0.0
+        ],
+        "mean": 0.12288000000003194,
+        "std": 0.3502095758659514
+      }
+    }
+  },
+  "cuda_vram": null,
+  "complexity": {
+    "reference_10s": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 26825670336,
+        "unsupported_ops": {
+          "aten::max_pool1d": 3,
+          "aten::avg_pool2d": 7,
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 2,
+          "aten::log10": 1,
+          "aten::mul": 1,
+          "aten::sub_": 1,
+          "aten::mean": 2,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "spec_augmenter",
+          "spec_augmenter.freq_dropper",
+          "spec_augmenter.time_dropper"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 82148943,
+        "trainable_params": 81065487,
+        "total_mult_adds": 26717429775,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nWavegram_Logmel_Cnn14                    [1, 527]                  --\n\u251c\u2500Conv1d: 1-1                            [1, 64, 64000]            704\n\u251c\u2500BatchNorm1d: 1-2                       [1, 64, 64000]            128\n\u251c\u2500ConvPreWavBlock: 1-3                   [1, 64, 16000]            --\n\u2502    \u2514\u2500Conv1d: 2-1                       [1, 64, 64000]            12,288\n\u2502    \u2514\u2500BatchNorm1d: 2-2                  [1, 64, 64000]            128\n\u2502    \u2514\u2500Conv1d: 2-3                       [1, 64, 64000]            12,288\n\u2502    \u2514\u2500BatchNorm1d: 2-4                  [1, 64, 64000]            128\n\u251c\u2500ConvPreWavBlock: 1-4                   [1, 128, 4000]            --\n\u2502    \u2514\u2500Conv1d: 2-5                       [1, 128, 16000]           24,576\n\u2502    \u2514\u2500BatchNorm1d: 2-6                  [1, 128, 16000]           256\n\u2502    \u2514\u2500Conv1d: 2-7                       [1, 128, 16000]           49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-8                  [1, 128, 16000]           256\n\u251c\u2500ConvPreWavBlock: 1-5                   [1, 128, 1000]            --\n\u2502    \u2514\u2500Conv1d: 2-9                       [1, 128, 4000]            49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-10                 [1, 128, 4000]            256\n\u2502    \u2514\u2500Conv1d: 2-11                      [1, 128, 4000]            49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-12                 [1, 128, 4000]            256\n\u251c\u2500ConvBlock: 1-6                         [1, 64, 500, 32]          --\n\u2502    \u2514\u2500Conv2d: 2-13                      [1, 64, 1000, 32]         2,304\n\u2502    \u2514\u2500BatchNorm2d: 2-14                 [1, 64, 1000, 32]         128\n\u2502    \u2514\u2500Conv2d: 2-15                      [1, 64, 1000, 32]         36,864\n\u2502    \u2514\u2500BatchNorm2d: 2-16                 [1, 64, 1000, 32]         128\n\u251c\u2500Spectrogram: 1-7                       [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-17                        --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                  [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                  [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-8                  [1, 1, 1001, 64]          (32,832)\n\u251c\u2500BatchNorm2d: 1-9                       [1, 64, 1001, 1]          128\n\u251c\u2500ConvBlock: 1-10                        [1, 64, 500, 32]          --\n\u2502    \u2514\u2500Conv2d: 2-18                      [1, 64, 1001, 64]         576\n\u2502    \u2514\u2500BatchNorm2d: 2-19                 [1, 64, 1001, 64]         128\n\u2502    \u2514\u2500Conv2d: 2-20                      [1, 64, 1001, 64]         36,864\n\u2502    \u2514\u2500BatchNorm2d: 2-21                 [1, 64, 1001, 64]         128\n\u251c\u2500ConvBlock: 1-11                        [1, 128, 250, 16]         --\n\u2502    \u2514\u2500Conv2d: 2-22                      [1, 128, 500, 32]         147,456\n\u2502    \u2514\u2500BatchNorm2d: 2-23                 [1, 128, 500, 32]         256\n\u2502    \u2514\u2500Conv2d: 2-24                      [1, 128, 500, 32]         147,456\n\u2502    \u2514\u2500BatchNorm2d: 2-25                 [1, 128, 500, 32]         256\n\u251c\u2500ConvBlock: 1-12                        [1, 256, 125, 8]          --\n\u2502    \u2514\u2500Conv2d: 2-26                      [1, 256, 250, 16]         294,912\n\u2502    \u2514\u2500BatchNorm2d: 2-27                 [1, 256, 250, 16]         512\n\u2502    \u2514\u2500Conv2d: 2-28                      [1, 256, 250, 16]         589,824\n\u2502    \u2514\u2500BatchNorm2d: 2-29                 [1, 256, 250, 16]         512\n\u251c\u2500ConvBlock: 1-13                        [1, 512, 62, 4]           --\n\u2502    \u2514\u2500Conv2d: 2-30                      [1, 512, 125, 8]          1,179,648\n\u2502    \u2514\u2500BatchNorm2d: 2-31                 [1, 512, 125, 8]          1,024\n\u2502    \u2514\u2500Conv2d: 2-32                      [1, 512, 125, 8]          2,359,296\n\u2502    \u2514\u2500BatchNorm2d: 2-33                 [1, 512, 125, 8]          1,024\n\u251c\u2500ConvBlock: 1-14                        [1, 1024, 31, 2]          --\n\u2502    \u2514\u2500Conv2d: 2-34                      [1, 1024, 62, 4]          4,718,592\n\u2502    \u2514\u2500BatchNorm2d: 2-35                 [1, 1024, 62, 4]          2,048\n\u2502    \u2514\u2500Conv2d: 2-36                      [1, 1024, 62, 4]          9,437,184\n\u2502    \u2514\u2500BatchNorm2d: 2-37                 [1, 1024, 62, 4]          2,048\n\u251c\u2500ConvBlock: 1-15                        [1, 2048, 31, 2]          --\n\u2502    \u2514\u2500Conv2d: 2-38                      [1, 2048, 31, 2]          18,874,368\n\u2502    \u2514\u2500BatchNorm2d: 2-39                 [1, 2048, 31, 2]          4,096\n\u2502    \u2514\u2500Conv2d: 2-40                      [1, 2048, 31, 2]          37,748,736\n\u2502    \u2514\u2500BatchNorm2d: 2-41                 [1, 2048, 31, 2]          4,096\n\u251c\u2500Linear: 1-16                           [1, 2048]                 4,196,352\n\u251c\u2500Linear: 1-17                           [1, 527]                  1,079,823\n==========================================================================================\nTotal params: 82,148,943\nTrainable params: 81,065,487\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 26.72\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 611.41\nParams size (MB): 328.60\nEstimated Total Size (MB): 941.28\n=========================================================================================="
+      },
+      "flops": 26825670336,
+      "macs_estimated": 13412835168.0,
+      "gflops": 26.825670336,
+      "gmacs_estimated": 13.412835168
+    },
+    "requested_duration": {
+      "input_shape": [
+        1,
+        320000
+      ],
+      "fvcore": {
+        "success": true,
+        "tool": "fvcore.nn.FlopCountAnalysis",
+        "flops": 26825670336,
+        "unsupported_ops": {
+          "aten::max_pool1d": 3,
+          "aten::avg_pool2d": 7,
+          "aten::pad": 1,
+          "aten::pow": 2,
+          "aten::add": 2,
+          "aten::log10": 1,
+          "aten::mul": 1,
+          "aten::sub_": 1,
+          "aten::mean": 2,
+          "aten::sigmoid": 1
+        },
+        "uncalled_modules": [
+          "spec_augmenter",
+          "spec_augmenter.freq_dropper",
+          "spec_augmenter.time_dropper"
+        ],
+        "warnings": [
+          "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate.",
+          "fvcore reported uncalled modules for this input path."
+        ]
+      },
+      "torchinfo": {
+        "success": true,
+        "tool": "torchinfo.summary",
+        "total_params": 82148943,
+        "trainable_params": 81065487,
+        "total_mult_adds": 26717429775,
+        "summary": "==========================================================================================\nLayer (type:depth-idx)                   Output Shape              Param #\n==========================================================================================\nWavegram_Logmel_Cnn14                    [1, 527]                  --\n\u251c\u2500Conv1d: 1-1                            [1, 64, 64000]            704\n\u251c\u2500BatchNorm1d: 1-2                       [1, 64, 64000]            128\n\u251c\u2500ConvPreWavBlock: 1-3                   [1, 64, 16000]            --\n\u2502    \u2514\u2500Conv1d: 2-1                       [1, 64, 64000]            12,288\n\u2502    \u2514\u2500BatchNorm1d: 2-2                  [1, 64, 64000]            128\n\u2502    \u2514\u2500Conv1d: 2-3                       [1, 64, 64000]            12,288\n\u2502    \u2514\u2500BatchNorm1d: 2-4                  [1, 64, 64000]            128\n\u251c\u2500ConvPreWavBlock: 1-4                   [1, 128, 4000]            --\n\u2502    \u2514\u2500Conv1d: 2-5                       [1, 128, 16000]           24,576\n\u2502    \u2514\u2500BatchNorm1d: 2-6                  [1, 128, 16000]           256\n\u2502    \u2514\u2500Conv1d: 2-7                       [1, 128, 16000]           49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-8                  [1, 128, 16000]           256\n\u251c\u2500ConvPreWavBlock: 1-5                   [1, 128, 1000]            --\n\u2502    \u2514\u2500Conv1d: 2-9                       [1, 128, 4000]            49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-10                 [1, 128, 4000]            256\n\u2502    \u2514\u2500Conv1d: 2-11                      [1, 128, 4000]            49,152\n\u2502    \u2514\u2500BatchNorm1d: 2-12                 [1, 128, 4000]            256\n\u251c\u2500ConvBlock: 1-6                         [1, 64, 500, 32]          --\n\u2502    \u2514\u2500Conv2d: 2-13                      [1, 64, 1000, 32]         2,304\n\u2502    \u2514\u2500BatchNorm2d: 2-14                 [1, 64, 1000, 32]         128\n\u2502    \u2514\u2500Conv2d: 2-15                      [1, 64, 1000, 32]         36,864\n\u2502    \u2514\u2500BatchNorm2d: 2-16                 [1, 64, 1000, 32]         128\n\u251c\u2500Spectrogram: 1-7                       [1, 1, 1001, 513]         --\n\u2502    \u2514\u2500STFT: 2-17                        --                        --\n\u2502    \u2502    \u2514\u2500Conv1d: 3-1                  [1, 513, 1001]            (525,312)\n\u2502    \u2502    \u2514\u2500Conv1d: 3-2                  [1, 513, 1001]            (525,312)\n\u251c\u2500LogmelFilterBank: 1-8                  [1, 1, 1001, 64]          (32,832)\n\u251c\u2500BatchNorm2d: 1-9                       [1, 64, 1001, 1]          128\n\u251c\u2500ConvBlock: 1-10                        [1, 64, 500, 32]          --\n\u2502    \u2514\u2500Conv2d: 2-18                      [1, 64, 1001, 64]         576\n\u2502    \u2514\u2500BatchNorm2d: 2-19                 [1, 64, 1001, 64]         128\n\u2502    \u2514\u2500Conv2d: 2-20                      [1, 64, 1001, 64]         36,864\n\u2502    \u2514\u2500BatchNorm2d: 2-21                 [1, 64, 1001, 64]         128\n\u251c\u2500ConvBlock: 1-11                        [1, 128, 250, 16]         --\n\u2502    \u2514\u2500Conv2d: 2-22                      [1, 128, 500, 32]         147,456\n\u2502    \u2514\u2500BatchNorm2d: 2-23                 [1, 128, 500, 32]         256\n\u2502    \u2514\u2500Conv2d: 2-24                      [1, 128, 500, 32]         147,456\n\u2502    \u2514\u2500BatchNorm2d: 2-25                 [1, 128, 500, 32]         256\n\u251c\u2500ConvBlock: 1-12                        [1, 256, 125, 8]          --\n\u2502    \u2514\u2500Conv2d: 2-26                      [1, 256, 250, 16]         294,912\n\u2502    \u2514\u2500BatchNorm2d: 2-27                 [1, 256, 250, 16]         512\n\u2502    \u2514\u2500Conv2d: 2-28                      [1, 256, 250, 16]         589,824\n\u2502    \u2514\u2500BatchNorm2d: 2-29                 [1, 256, 250, 16]         512\n\u251c\u2500ConvBlock: 1-13                        [1, 512, 62, 4]           --\n\u2502    \u2514\u2500Conv2d: 2-30                      [1, 512, 125, 8]          1,179,648\n\u2502    \u2514\u2500BatchNorm2d: 2-31                 [1, 512, 125, 8]          1,024\n\u2502    \u2514\u2500Conv2d: 2-32                      [1, 512, 125, 8]          2,359,296\n\u2502    \u2514\u2500BatchNorm2d: 2-33                 [1, 512, 125, 8]          1,024\n\u251c\u2500ConvBlock: 1-14                        [1, 1024, 31, 2]          --\n\u2502    \u2514\u2500Conv2d: 2-34                      [1, 1024, 62, 4]          4,718,592\n\u2502    \u2514\u2500BatchNorm2d: 2-35                 [1, 1024, 62, 4]          2,048\n\u2502    \u2514\u2500Conv2d: 2-36                      [1, 1024, 62, 4]          9,437,184\n\u2502    \u2514\u2500BatchNorm2d: 2-37                 [1, 1024, 62, 4]          2,048\n\u251c\u2500ConvBlock: 1-15                        [1, 2048, 31, 2]          --\n\u2502    \u2514\u2500Conv2d: 2-38                      [1, 2048, 31, 2]          18,874,368\n\u2502    \u2514\u2500BatchNorm2d: 2-39                 [1, 2048, 31, 2]          4,096\n\u2502    \u2514\u2500Conv2d: 2-40                      [1, 2048, 31, 2]          37,748,736\n\u2502    \u2514\u2500BatchNorm2d: 2-41                 [1, 2048, 31, 2]          4,096\n\u251c\u2500Linear: 1-16                           [1, 2048]                 4,196,352\n\u251c\u2500Linear: 1-17                           [1, 527]                  1,079,823\n==========================================================================================\nTotal params: 82,148,943\nTrainable params: 81,065,487\nNon-trainable params: 1,083,456\nTotal mult-adds (G): 26.72\n==========================================================================================\nInput size (MB): 1.28\nForward/backward pass size (MB): 611.41\nParams size (MB): 328.60\nEstimated Total Size (MB): 941.28\n=========================================================================================="
+      },
+      "flops": 26825670336,
+      "macs_estimated": 13412835168.0,
+      "gflops": 26.825670336,
+      "gmacs_estimated": 13.412835168
+    }
+  },
+  "minimum_input": {
+    "status": "search_aborted_with_non_size_error",
+    "samples": null,
+    "seconds": null,
+    "sample_rate": 32000,
+    "attempt_count": 4,
+    "attempts_tail": [
+      {
+        "samples": 320000,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 160016,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 80024,
+        "ok": true,
+        "classification": "success",
+        "error": null
+      },
+      {
+        "samples": 40028,
+        "ok": false,
+        "classification": "unrelated_runtime_error",
+        "error": "Sizes of tensors must match except in dimension 1. Expected size 63 but got size 62 for tensor number 1 in the list."
+      }
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "dummy_input": "torch.randn((1, samples), dtype=torch.float32)",
+    "dtype": "torch.float32",
+    "model_mode": "model.eval()",
+    "inference_context": "torch.inference_mode()",
+    "gradient_disabled": true
+  },
+  "warnings": [
+    "fvcore reported uncalled modules for this input path.",
+    "fvcore reported unsupported operators; FLOPs are a lower-bound/partial estimate."
+  ],
+  "errors": []
+}
