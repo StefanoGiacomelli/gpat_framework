@@ -1,0 +1,1 @@
+"""PaSST model wrapper."""

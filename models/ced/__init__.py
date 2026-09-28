@@ -1,0 +1,1 @@
+"""CED model wrapper."""

@@ -1,0 +1,1 @@
+"""AudioCLIP model wrapper."""
